@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>Insta.png</file>
+    <file>Contato.png</file>
+    <file>Home.png</file>
+    <file>Logo.png</file>
+    <file>Sobre.png</file>
+  </qresource>
+</RCC>
