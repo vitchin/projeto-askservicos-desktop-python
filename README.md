@@ -15,10 +15,7 @@ No app você poderá se cadastrar e assim seus dados serão salvos, e compartilh
 
 ### O que foi utilizado no projeto:
 
-Python, PySide2 e QtDesigner.
+- **PySide2:** é uma extenção do Python que permite fazer a ligação com o QtDesigner.
 
 
--- **PySide2:** é uma extenção do Python que permite fazer a ligação com o QtDesigner.
-
-
--- **QtDesigner:** Ferramenta de criação de interfaces com Python para desktop.
+- **QtDesigner:** Ferramenta de criação de interfaces com Python para desktop.
