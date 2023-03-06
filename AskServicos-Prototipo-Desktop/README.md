@@ -18,3 +18,11 @@
   - Cores;
   - Nomes(Legíveis);
   - Tipogragia(atraente).
+
+
+* Conexão com banco de dados:
+  - Feito.
+
+
+* Conexão com a internet:
+  - Interessante.
