@@ -1,7 +1,7 @@
 # Projeto AskServiços vers. Desktop
 ### Projeto desenvolvido por mim e pela minha equipe de Projeto Integrador no ETE Adv. José David Gil Rodrigues.
 
-**Função:** Permitir a promoção de trabalhadores autônomos da região de Recife.
+- **Função:** Permitir a promoção de trabalhadores autônomos da região de Recife.
 
 **Tipos de usuários:** Após uma análise percebemos que temos dois usuários em potêncial.
 
