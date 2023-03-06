@@ -9,7 +9,7 @@
 
 * Elementos:
   - Definidos de forma simples;
-  - - Campos de entradas de dados(Bem definidos);
+  - Campos de entradas de dados(Bem definidos);
   - Faceis de entender;
   - Simples (de certa forma) de usar.
 
