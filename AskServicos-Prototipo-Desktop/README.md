@@ -1,28 +1,24 @@
 # Projeto AskServiços vers. Desktop
-### Projeto desenvolvido pela minha equipe de Projeto Integrador no ETE Adv. José David Gil Rodrigues.
 
-**Função:** Permitir a promoção de trabalhadores autônomos da região de Recife.
+### Characteristicas da aplicação
 
-**Tipos de usuários:** Após uma análise percebemos que temos dois usuários em potêncial.
-
-
-_**Trabalhador:**_ Pessoa que quer promover/anúnciar seus serviços.
-
-
-_**Cliente:**_ Pessoa que irá procurar pelos serviços.
-
-No app você poderá se cadastrar e assim seus dados serão salvos, e compartilhados na tabela na página inicial, ao pesquisar por um determinado tópico na barra de pesquisa como: Nome, Tipo de serviço, etc. serão demonstrados os resultados encontrados em relação do que você pesquisou. Há também as opções de ver os contatos e sobre o projeto. 
+* Tratamento de dados:
+  - Campos de entradas de dados;
+    - Definidos.
+  - Não feito.
 
 
-_**Obs:**_ Ainda desejamos desenvolver o projeto, mas a ideia é fazer um site dele.
+* Funções:
+  - Definidas(mas precisa melhorar).
 
 
-### O que foi utilizado no projeto:
-
-Python, PySide2 e QtDesigner.
-
-
-**PySide2:** é uma extenção do Python que permite fazer a ligação com o QtDesigner.
+* Elementos:
+  - Definidos de forma simples;
+  - Faceis de entender;
+  - Simples (de certa forma) de usar.
 
 
-**QtDesigner:** Ferramenta de criação de interfaces com Python para desktop.
+* Interface:
+  - Cores;
+  - Nomes;
+  - Tipogragia.
