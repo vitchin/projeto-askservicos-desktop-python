@@ -4,7 +4,7 @@
 
 * Tratamento de dados:
   - Campos de entradas de dados;
-    - Definidos.
+    Definidos.
   - Não feito.
 
 
