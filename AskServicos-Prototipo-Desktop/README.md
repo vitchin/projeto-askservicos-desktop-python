@@ -2,23 +2,19 @@
 
 ### Characteristicas da aplicação
 
-* Tratamento de dados:
-  - Campos de entradas de dados;
-    Definidos.
-  - Não feito.
-
-
 * Funções:
-  - Definidas(mas precisa melhorar).
+  - Definidas(mas precisa melhorar);
+  - Tratamento de dados(Não feito).
 
 
 * Elementos:
   - Definidos de forma simples;
+  - - Campos de entradas de dados(Bem definidos);
   - Faceis de entender;
   - Simples (de certa forma) de usar.
 
 
 * Interface:
   - Cores;
-  - Nomes;
-  - Tipogragia.
+  - Nomes(Legíveis);
+  - Tipogragia(atraente).
