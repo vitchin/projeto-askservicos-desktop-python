@@ -1,5 +1,5 @@
 # Projeto AskServiços vers. Desktop
-### Projeto desenvolvido pela minha equipe de Projeto Integrador no ETE Adv. José David Gil Rodrigues.
+### Projeto desenvolvido por mim e pela minha equipe de Projeto Integrador no ETE Adv. José David Gil Rodrigues.
 
 **Função:** Permitir a promoção de trabalhadores autônomos da região de Recife.
 
@@ -12,10 +12,6 @@
 **Cliente:** Pessoa que irá procurar pelos serviços.
 
 No app você poderá se cadastrar e assim seus dados serão salvos, e compartilhados na tabela na página inicial, ao pesquisar por um determinado tópico na barra de pesquisa como: Nome, Tipo de serviço, etc. serão demonstrados os resultados encontrados em relação do que você pesquisou. Há também as opções de ver os contatos e sobre o projeto. 
-
-
-**Obs:** Ainda desejamos desenvolver o projeto, mas a ideia é fazer um site dele.
-
 
 ### O que foi utilizado no projeto:
 
