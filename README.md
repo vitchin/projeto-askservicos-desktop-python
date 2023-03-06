@@ -6,15 +6,15 @@
 **Tipos de usuários:** Após uma análise percebemos que temos dois usuários em potêncial.
 
 
-_**Trabalhador:**_ Pessoa que quer promover/anúnciar seus serviços.
+**Trabalhador:** Pessoa que quer promover/anúnciar seus serviços.
 
 
-_**Cliente:**_ Pessoa que irá procurar pelos serviços.
+**Cliente:** Pessoa que irá procurar pelos serviços.
 
 No app você poderá se cadastrar e assim seus dados serão salvos, e compartilhados na tabela na página inicial, ao pesquisar por um determinado tópico na barra de pesquisa como: Nome, Tipo de serviço, etc. serão demonstrados os resultados encontrados em relação do que você pesquisou. Há também as opções de ver os contatos e sobre o projeto. 
 
 
-_**Obs:**_ Ainda desejamos desenvolver o projeto, mas a ideia é fazer um site dele.
+**Obs:** Ainda desejamos desenvolver o projeto, mas a ideia é fazer um site dele.
 
 
 ### O que foi utilizado no projeto:
