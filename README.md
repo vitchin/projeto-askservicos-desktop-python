@@ -11,7 +11,7 @@
 
 **Cliente:** Pessoa que irá procurar pelos serviços.
 
-No app você poderá se cadastrar e assim seus dados serão salvos, e compartilhados na tabela na página inicial, ao pesquisar por um determinado tópico na barra de pesquisa como: Nome, Tipo de serviço, etc. serão demonstrados os resultados encontrados em relação do que você pesquisou. Há também as opções de ver os contatos e sobre o projeto. 
+No app você poderá se cadastrar e assim seus dados serão salvos, e compartilhados na tabela na página inicial, ao pesquisar por um determinado tópico na barra de pesquisa como: Nome, Tipo de serviço, etc. serão demonstrados os resultados encontrados em relação ao que você pesquisou. Há também as opções de ver os contatos e sobre o projeto. 
 
 ### O que foi utilizado no projeto:
 
