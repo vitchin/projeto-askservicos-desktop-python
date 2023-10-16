@@ -54,21 +54,21 @@ class JanelaPrincipal(QMainWindow, Ui_JanelaPrincipal):
 
         if self.txtSenha.text() != self.txtConfirmarSenha.text():
             msg = QMessageBox()
-            msg.setIcon(QMessageBox.Warning)
-            msg.setWindowTitle("Senhas Divergentes")
-            msg.setText("As senhas não são iguais!")
+            msg.setIcon(QMessageBox.warning)
+            msg.setWindowTitle("Senhas Diferentes")
+            msg.setText("As senhas não são iguais!\nVocê deve escrever duas senhas iguais.")
             msg.exec_()
 
         if nome == "" or email == "" or telefone == "" or rua == "" or municipio == "" or hora == "" or dias == "" or senha == "" or tipo == "":
             msg = QMessageBox()
-            msg.setIcon(QMessageBox.Warning)
+            msg.setIcon(QMessageBox.warning)
             msg.setWindowTitle("Campo vazio")
-            msg.setText("Você esqueceu de preencher algumas informações!")
+            msg.setText("Você esqueceu de preencher alguma informação!")
             msg.exec_()
         else:
             db.inserir_apaga_atualiza("INSERT INTO USUARIO(NOME, EMAIL, TELEFONE, RUA, MUNICIPIO, HORA, DIAS, SENHA, TIPO) VALUES('{}','{}','{}','{}','{}','{}','{}','{}','{}')".format(nome, email, telefone, rua, municipio, hora, dias, senha, tipo))
             msg = QMessageBox()
-            msg.setIcon(QMessageBox.Information)
+            msg.setIcon(QMessageBox.information)
             msg.setWindowTitle("Cadastro realizado")
             msg.setText("Seu cadastro foi realizado com sucesso!")
             msg.exec_()
@@ -97,7 +97,7 @@ class JanelaPrincipal(QMainWindow, Ui_JanelaPrincipal):
         lista = db.pegar_dados(f"SELECT * FROM USUARIO WHERE NOME LIKE '%{valor_consulta}%' OR RUA LIKE '%{valor_consulta}%' OR MUNICIPIO LIKE '%{valor_consulta}%' OR TIPO LIKE '%{valor_consulta}%'")
         lista = list(lista)
         if not lista:
-            return QMessageBox.Warning(QMessageBox(), f"Att: Usuário não encontrado!")
+            return QMessageBox.warning(QMessageBox(), f"Att: Usuário não encontrado!")
         else:
             self.tb_usuarios.setRowCount(0)
             for idxlinha, linha in enumerate(lista):
@@ -115,21 +115,21 @@ class JanelaPrincipal(QMainWindow, Ui_JanelaPrincipal):
 
         if self.txtSenhaCliente.text() != self.txtConfirmarSenhaCliente.text():
             msg = QMessageBox()
-            msg.setIcon(QMessageBox.Warning)
+            msg.setIcon(QMessageBox.warning)
             msg.setWindowTitle("Senhas Divergentes")
             msg.setText("As senhas não são iguais!")
             msg.exec_()
 
         if nome == "" or email == "" or telefone == "" or senha == "":
             msg = QMessageBox()
-            msg.setIcon(QMessageBox.Warning)
+            msg.setIcon(QMessageBox.warning)
             msg.setWindowTitle("Campo vazio")
             msg.setText("Você esqueceu de preencher algumas informações!")
             msg.exec_()
         else:
             dbc.inserir_apaga_atualiza("INSERT INTO CLIENTE(NOME, EMAIL, TELEFONE, SENHA) VALUES('{}','{}','{}','{}')".format(nome, email, telefone, senha))
             msg = QMessageBox()
-            msg.setIcon(QMessageBox.Information)
+            msg.setIcon(QMessageBox.information)
             msg.setWindowTitle("Cadastro realizado")
             msg.setText("Seu cadastro foi realizado com sucesso!")
             msg.exec_()

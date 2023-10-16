@@ -347,7 +347,7 @@ background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, 
 </string>
       </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="pg_inicial">
        <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -611,23 +611,6 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal{
           <attribute name="horizontalHeaderDefaultSectionSize">
            <number>150</number>
           </attribute>
-          <column>
-           <property name="text">
-            <string>ID</string>
-           </property>
-           <property name="font">
-            <font>
-             <family>Leelawadee UI</family>
-             <pointsize>10</pointsize>
-             <weight>50</weight>
-             <bold>false</bold>
-             <kerning>true</kerning>
-            </font>
-           </property>
-           <property name="textAlignment">
-            <set>AlignCenter</set>
-           </property>
-          </column>
           <column>
            <property name="text">
             <string>NOME</string>
