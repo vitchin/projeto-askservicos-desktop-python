@@ -1,8 +1,8 @@
 from PyQt5.QtWidgets import (QTableWidgetItem, QMessageBox)
 from PyQt5.QtWidgets import *
-from PySide2.QtGui import QIcon
-from PySide2.QtWidgets import (QTableWidgetItem, QMessageBox)
-from PySide2.QtWidgets import *
+from PySide6.QtGui import QIcon
+from PySide6.QtWidgets import (QTableWidgetItem, QMessageBox)
+from PySide6.QtWidgets import *
 from ui_DesignAsk import Ui_JanelaPrincipal
 from Database import DataBase
 from DatabaseCliente import DataBaseCliente
