@@ -32,7 +32,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <string notr="true">background-color: #0D1117;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -56,8 +56,8 @@
       <property name="styleSheet">
        <string notr="true">margin: 0px;
 padding: 0px;
-border: transparent;
-background-color: rgb(24, 12, 59);</string>
+border: 1px solid #30363D;
+background-color: #161B22;</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -83,6 +83,9 @@ background-color: rgb(24, 12, 59);</string>
        </property>
        <item>
         <widget class="QFrame" name="frame_12">
+         <property name="styleSheet">
+          <string notr="true">border: none;</string>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -118,7 +121,8 @@ background-color: rgb(24, 12, 59);</string>
             <property name="styleSheet">
              <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(135, 163, 255);</string>
+color: #3F51B5;
+border: none;</string>
             </property>
             <property name="text">
              <string>ASK</string>
@@ -144,7 +148,8 @@ color: rgb(135, 163, 255);</string>
             <property name="styleSheet">
              <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(255, 255, 255);
+color: #E8EAED;
+border: none;
 </string>
             </property>
             <property name="text">
@@ -198,9 +203,9 @@ color: rgb(255, 255, 255);
           <font>
            <family>Leelawadee UI</family>
            <pointsize>11</pointsize>
-           <weight>50</weight>
+           <weight>75</weight>
            <italic>false</italic>
-           <bold>false</bold>
+           <bold>true</bold>
           </font>
          </property>
          <property name="cursor">
@@ -211,14 +216,12 @@ color: rgb(255, 255, 255);
 	padding: 5px;
 	border: none;
 	border-radius: 0px;
-	color: &quot;white&quot;;
+	color: #E8EAED;
 	letter-spacing:1px;
-	font-weight: 500;
 	background-color: transparent;
-	font: &quot;Leelawadee&quot;;
 }
 QPushButton:hover{
-	background-color: rgb(61, 76, 161);
+	background-color: #5C6BC0;
 }</string>
          </property>
          <property name="text">
@@ -250,9 +253,9 @@ QPushButton:hover{
           <font>
            <family>Leelawadee UI</family>
            <pointsize>11</pointsize>
-           <weight>50</weight>
+           <weight>75</weight>
            <italic>false</italic>
-           <bold>false</bold>
+           <bold>true</bold>
           </font>
          </property>
          <property name="cursor">
@@ -263,14 +266,12 @@ QPushButton:hover{
 	padding: 5px;
 	border: none;
 	border-radius: 0px;
-	color: &quot;white&quot;;
+	color: #E8EAED;
 	letter-spacing:1px;
-	font-weight: 500;
 	background-color: transparent;
-	font: &quot;Leelawadee&quot;;
 }
 QPushButton:hover{
-	background-color: rgb(61, 76, 161);
+	background-color: #5C6BC0;
 }</string>
          </property>
          <property name="text">
@@ -302,9 +303,9 @@ QPushButton:hover{
           <font>
            <family>Leelawadee UI</family>
            <pointsize>11</pointsize>
-           <weight>50</weight>
+           <weight>75</weight>
            <italic>false</italic>
-           <bold>false</bold>
+           <bold>true</bold>
           </font>
          </property>
          <property name="cursor">
@@ -315,14 +316,12 @@ QPushButton:hover{
 	padding: 5px;
 	border: none;
 	border-radius: 0px;
-	color: &quot;white&quot;;
+	color: #E8EAED;
 	letter-spacing:1px;
-	font-weight: 500;
 	background-color: transparent;
-	font: &quot;Leelawadee&quot;;
 }
 QPushButton:hover{
-	background-color: rgb(61, 76, 161);
+	background-color: #5C6BC0;
 }</string>
          </property>
          <property name="text">
@@ -342,9 +341,7 @@ QPushButton:hover{
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-radius:2px;
-background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(0, 16, 223, 0), stop:0.994318 rgba(105, 80, 219, 0));
-</string>
+       <string notr="true">background-color: transparent;</string>
       </property>
       <property name="currentIndex">
        <number>0</number>
@@ -380,9 +377,8 @@ background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, 
           <property name="styleSheet">
            <string notr="true">margin: 0px;
 padding: 0px;
-border: transparent;
-border-radius: 20px;
-background-color: rgb(255, 255, 255);</string>
+border-radius: 5px;
+background-color: #161B22;</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
@@ -412,8 +408,8 @@ background-color: rgb(255, 255, 255);</string>
               <font>
                <family>Leelawadee UI</family>
                <pointsize>11</pointsize>
-               <weight>50</weight>
-               <bold>false</bold>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
              </property>
              <property name="cursor">
@@ -422,14 +418,17 @@ background-color: rgb(255, 255, 255);</string>
              <property name="styleSheet">
               <string notr="true">QPushButton{
 	padding: 10px;
-	background-color: rgb(24, 12, 59);
-	border: transparent;
+	background-color: #3F51B5;
+	border: 1px solid #30363D;
 	border-top-right-radius:0px;
 	border-bottom-right-radius: 0px;	
-	color: rgb(255, 255, 255);
-;}
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color: #E8EAED;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
 QPushButton:hover{
-	background-color: rgb(61, 76, 161);
+	background-color: #5C6BC0;
 }
 </string>
              </property>
@@ -463,8 +462,9 @@ QPushButton:hover{
              <property name="styleSheet">
               <string notr="true">margin: 0px;
 padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:0px;</string>
              </property>
              <property name="maxLength">
@@ -484,8 +484,8 @@ border-radius:0px;</string>
               <font>
                <family>Leelawadee UI</family>
                <pointsize>11</pointsize>
-               <weight>50</weight>
-               <bold>false</bold>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
              </property>
              <property name="cursor">
@@ -497,14 +497,17 @@ border-radius:0px;</string>
              <property name="styleSheet">
               <string notr="true">QPushButton{
 	padding: 10px;
-	background-color: rgb(24, 12, 59);
-	border: transparent;
+	background-color: #3F51B5;
+	border: 1px solid #30363D;
 	border-top-left-radius:0px;
 	border-bottom-left-radius: 0px;
-	color: rgb(255, 255, 255);
-;}
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color: #E8EAED;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
 QPushButton:hover{
-	background-color: rgb(61, 76, 161);
+	background-color: #5C6BC0;
 }
 </string>
              </property>
@@ -528,82 +531,47 @@ QPushButton:hover{
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
           <property name="styleSheet">
-           <string notr="true">QHeaderView:section{
-	padding: 5px;
-	background-color: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
-	border: transparent;
-	border-right: 1px solid rgb(199, 199, 199);
-	border-bottom: 1px solid rgb(199, 199, 199);
-}
-QHeaderView:section:hover{
-	background-color: rgb(231, 231, 239);
+           <string notr="true">QTableWidget {
+    background-color: #161B22;
+    color: #E8EAED;
+    border: 1px solid #30363D;
+    gridline-color: #30363D;
 }
 
-QTableWidget{
-	background-color: rgb(255, 255, 255);
-	border: 1px solid rgb(199, 199, 199);
+QHeaderView::section {
+    background-color: #1E232A;
+    color: #E8EAED;
+    padding: 5px;
+    border: 1px solid #30363D;
 }
 
-/*Mexendo no scrollbar*/
-
-QScrollBar:horizontal{
-	border: transparent;
-	border-radius: 0px;
-	background-color: rgb(231, 231, 239);
-	height: 13px;
+QScrollBar:vertical, QScrollBar:horizontal {
+    border: 1px solid #30363D;
+    background: #161B22;
+    width: 15px;
+    margin: 22px 0 22px 0;
 }
 
-QScrollBar::handle:horizontal{
-	background-color: rgb(24, 12, 59);
-	/*min-height: 10px;*/
-	border-radius: 5px;
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background: #3F51B5;
+    min-height: 20px;
 }
 
-QScrollBar::handle:horizontal:hover{
-	background-color: rgb(61, 76, 161);
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    border: 1px solid #30363D;
+    background: #1E232A;
+    height: 20px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
 }
 
-/*Mexendo na seta direita*/
-QScollBar::sub-line:horizontal{
-	border:transparent;
-	background-color: rgba(203, 204, 210, 150);
-	height: 15px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	subcontrol-position:top;
-	subcontrol-origin: margin;
-}
-QScollBar::sub-line:horizontal:hover {
-	background-color: rgb(61, 76, 161);
-}
-
-/*Mexendo na seta esquerda*/
-QScollBar::add-line:vertical {
-	border:none;
-    background-color: rgba(203, 204, 210, 150);		
-	height: 15px;
-	border-top-left-radius: 7px;
-	border-top-right-radius: 7px;
-	subcontrol-position:bottom;
-	subcontrol-origin: margin;
-}
-QScollBar::add-line:horizontal:hover {
-	background-color: rgb(61, 76, 161);
-}
-
-/*Mexendo nas setas direita e esquerda*/
-QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal{
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));
-}
-
-QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal{
-		background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));
-}
-
-
-
-</string>
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical,
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+     width: 3px;
+     height: 3px;
+     background: #E8EAED;
+}</string>
           </property>
           <attribute name="horizontalHeaderMinimumSectionSize">
            <number>100</number>
@@ -779,7 +747,7 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal{
         <item>
          <widget class="QFrame" name="frame_5">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255);</string>
+           <string notr="true">background-color: #0D1117;</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
@@ -815,12 +783,11 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal{
               <cursorShape>UpArrowCursor</cursorShape>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(255, 255, 255);
+              <string notr="true">background-color: #161B22;
 padding: 10px;
-color: rgb(21, 21, 21);
-border: 1px solid rgb(199, 199, 199);
-border-radius:10px;
-font: &quot;Leelawadee UI&quot;;</string>
+color: #E8EAED;
+border: 1px solid #30363D;
+border-radius:10px;</string>
              </property>
              <property name="html">
               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -873,7 +840,7 @@ p, li { white-space: pre-wrap; }
         <item>
          <widget class="QFrame" name="frame_4">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255);</string>
+           <string notr="true">background-color: #0D1117;</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
@@ -911,12 +878,11 @@ p, li { white-space: pre-wrap; }
               <cursorShape>UpArrowCursor</cursorShape>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(255, 255, 255);
+              <string notr="true">background-color: #161B22;
 padding: 10px;
-color: rgb(21, 21, 21);
-border: 1px solid rgb(199, 199, 199);
-border-radius:10px;
-font: &quot;Leelawadee&quot;;</string>
+color: #E8EAED;
+border: 1px solid #30363D;
+border-radius:10px;</string>
              </property>
              <property name="html">
               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -980,12 +946,11 @@ p, li { white-space: pre-wrap; }
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255);
+           <string notr="true">background-color: #161B22;
 padding: 10px;
-color: rgb(21, 21, 21);
-border: 1px solid rgb(199, 199, 199);
-border-radius:10px;
-font: &quot;Leelawadee&quot;;</string>
+color: #E8EAED;
+border: 1px solid #30363D;
+border-radius:10px;</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
@@ -1021,18 +986,18 @@ font: &quot;Leelawadee&quot;;</string>
               <font>
                <family>Leelawadee UI</family>
                <pointsize>11</pointsize>
-               <weight>50</weight>
+               <weight>75</weight>
                <italic>false</italic>
-               <bold>false</bold>
+               <bold>true</bold>
               </font>
              </property>
              <property name="styleSheet">
               <string notr="true">margin: 0px;
-padding: 0px;
-color: rgb(0, 0, 0);
+padding: 5px;
+color: #E8EAED;
 border: transparent;
 border-radius: 0px;
-border-bottom: 1px solid &quot;grey&quot;;</string>
+border-bottom: 1px solid #30363D;</string>
              </property>
              <property name="text">
               <string>O QUE DESEJA FAZER?</string>
@@ -1060,9 +1025,9 @@ border-bottom: 1px solid &quot;grey&quot;;</string>
               <font>
                <family>Leelawadee UI</family>
                <pointsize>11</pointsize>
-               <weight>50</weight>
+               <weight>75</weight>
                <italic>false</italic>
-               <bold>false</bold>
+               <bold>true</bold>
               </font>
              </property>
              <property name="cursor">
@@ -1071,13 +1036,14 @@ border-bottom: 1px solid &quot;grey&quot;;</string>
              <property name="styleSheet">
               <string notr="true">QPushButton{
 	padding: 10px;
-	background-color: rgb(24, 12, 59);
-	border: transparent;
+	background-color: #3F51B5;
+	border: 1px solid #30363D;
 	border-radius:15px;
-	color: rgb(255, 255, 255);
-;}
+	color: #E8EAED;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
 QPushButton:hover{
-	background-color: rgb(61, 76, 161);
+	background-color: #5C6BC0;
 }
 </string>
              </property>
@@ -1104,9 +1070,9 @@ QPushButton:hover{
               <font>
                <family>Leelawadee UI</family>
                <pointsize>11</pointsize>
-               <weight>50</weight>
+               <weight>75</weight>
                <italic>false</italic>
-               <bold>false</bold>
+               <bold>true</bold>
               </font>
              </property>
              <property name="cursor">
@@ -1115,13 +1081,14 @@ QPushButton:hover{
              <property name="styleSheet">
               <string notr="true">QPushButton{
 	padding: 10px;
-	background-color: rgb(24, 12, 59);
-	border: transparent;
+	background-color: #3F51B5;
+	border: 1px solid #30363D;
 	border-radius:15px;
-	color: rgb(255, 255, 255);
-;}
+	color: #E8EAED;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
 QPushButton:hover{
-	background-color: rgb(61, 76, 161);
+	background-color: #5C6BC0;
 }
 </string>
              </property>
@@ -1148,9 +1115,9 @@ QPushButton:hover{
               <font>
                <family>Leelawadee UI</family>
                <pointsize>11</pointsize>
-               <weight>50</weight>
+               <weight>75</weight>
                <italic>false</italic>
-               <bold>false</bold>
+               <bold>true</bold>
               </font>
              </property>
              <property name="cursor">
@@ -1159,13 +1126,14 @@ QPushButton:hover{
              <property name="styleSheet">
               <string notr="true">QPushButton{
 	padding: 10px;
-	background-color: rgb(24, 12, 59);
-	border: transparent;
+	background-color: #3F51B5;
+	border: 1px solid #30363D;
 	border-radius:15px;
-	color: rgb(255, 255, 255);
-;}
+	color: #E8EAED;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
 QPushButton:hover{
-	background-color: rgb(61, 76, 161);
+	background-color: #5C6BC0;
 }
 </string>
              </property>
@@ -1222,12 +1190,11 @@ QPushButton:hover{
           <property name="styleSheet">
            <string notr="true">margin: 0px;
 padding: 10px;
-border: transparent;
-background-color: rgb(255, 255, 255);
-color: rgb(21, 21, 21);
-border: 1px solid rgb(199, 199, 199);
+background-color: #161B22;
+color: #E8EAED;
+border: 1px solid #30363D;
 border-radius:10px;
-font: &quot;Leelawadee UI&quot;;</string>
+</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
@@ -1263,18 +1230,18 @@ font: &quot;Leelawadee UI&quot;;</string>
               <font>
                <family>Liberation Sans</family>
                <pointsize>12</pointsize>
-               <weight>50</weight>
+               <weight>75</weight>
                <italic>false</italic>
-               <bold>false</bold>
+               <bold>true</bold>
               </font>
              </property>
              <property name="styleSheet">
               <string notr="true">margin: 0px;
 padding: 5px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;
 border-radius: 0px;
-border-bottom: 1px solid &quot;grey&quot;;
+border-bottom: 1px solid #30363D;
 </string>
              </property>
              <property name="text">
@@ -1317,7 +1284,7 @@ border-bottom: 1px solid &quot;grey&quot;;
              <property name="styleSheet">
               <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
              </property>
              <property name="text">
@@ -1350,8 +1317,9 @@ border: transparent;</string>
              </property>
              <property name="styleSheet">
               <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
              </property>
              <property name="inputMask">
@@ -1406,7 +1374,7 @@ border-radius:5px;</string>
              <property name="styleSheet">
               <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
              </property>
              <property name="text">
@@ -1439,8 +1407,9 @@ border: transparent;</string>
              </property>
              <property name="styleSheet">
               <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
              </property>
              <property name="maxLength">
@@ -1486,7 +1455,7 @@ border-radius:5px;</string>
              <property name="styleSheet">
               <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
              </property>
              <property name="text">
@@ -1519,8 +1488,9 @@ border: transparent;</string>
              </property>
              <property name="styleSheet">
               <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
              </property>
              <property name="maxLength">
@@ -1616,7 +1586,7 @@ border: transparent;</string>
                  <property name="styleSheet">
                   <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
                  </property>
                  <property name="text">
@@ -1649,8 +1619,9 @@ border: transparent;</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
                  </property>
                  <property name="text">
@@ -1738,7 +1709,7 @@ border: transparent;</string>
                  <property name="styleSheet">
                   <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
                  </property>
                  <property name="text">
@@ -1771,8 +1742,9 @@ border: transparent;</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
                  </property>
                  <property name="text">
@@ -1855,9 +1827,9 @@ border: transparent;</string>
                  <font>
                   <family>Leelawadee UI</family>
                   <pointsize>11</pointsize>
-                  <weight>50</weight>
+                  <weight>75</weight>
                   <italic>false</italic>
-                  <bold>false</bold>
+                  <bold>true</bold>
                  </font>
                 </property>
                 <property name="cursor">
@@ -1866,13 +1838,14 @@ border: transparent;</string>
                 <property name="styleSheet">
                  <string notr="true">QPushButton{
 	padding: 10px;
-	background-color: rgb(24, 12, 59);
-	border: transparent;
+	background-color: #3F51B5;
+	border: 1px solid #30363D;
 	border-radius:15px;
-	color: rgb(255, 255, 255);
-;}
+	color: #E8EAED;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
 QPushButton:hover{
-	background-color: rgb(61, 76, 161);
+	background-color: #5C6BC0;
 }
 </string>
                 </property>
@@ -1905,9 +1878,9 @@ QPushButton:hover{
                  <font>
                   <family>Leelawadee UI</family>
                   <pointsize>11</pointsize>
-                  <weight>50</weight>
+                  <weight>75</weight>
                   <italic>false</italic>
-                  <bold>false</bold>
+                  <bold>true</bold>
                  </font>
                 </property>
                 <property name="cursor">
@@ -1916,13 +1889,14 @@ QPushButton:hover{
                 <property name="styleSheet">
                  <string notr="true">QPushButton{
 	padding: 10px;
-	background-color: rgb(24, 12, 59);
-	border: transparent;
+	background-color: #3F51B5;
+	border: 1px solid #30363D;
 	border-radius:15px;
-	color: rgb(255, 255, 255);
-;}
+	color: #E8EAED;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
 QPushButton:hover{
-	background-color: rgb(61, 76, 161);
+	background-color: #5C6BC0;
 }
 </string>
                 </property>
@@ -1979,12 +1953,11 @@ QPushButton:hover{
           <property name="styleSheet">
            <string notr="true">margin: 0px;
 padding: 10px;
-border: transparent;
-background-color: rgb(255, 255, 255);
-color: rgb(21, 21, 21);
-border: 1px solid rgb(199, 199, 199);
+background-color: #161B22;
+color: #E8EAED;
+border: 1px solid #30363D;
 border-radius:10px;
-font: &quot;Leelawadee&quot;;</string>
+</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::NoFrame</enum>
@@ -2020,18 +1993,18 @@ font: &quot;Leelawadee&quot;;</string>
               <font>
                <family>Liberation Sans</family>
                <pointsize>12</pointsize>
-               <weight>50</weight>
+               <weight>75</weight>
                <italic>false</italic>
-               <bold>false</bold>
+               <bold>true</bold>
               </font>
              </property>
              <property name="styleSheet">
               <string notr="true">margin: 0px;
 padding: 5px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;
 border-radius: 0px;
-border-bottom: 1px solid &quot;grey&quot;;
+border-bottom: 1px solid #30363D;
 </string>
              </property>
              <property name="text">
@@ -2062,7 +2035,7 @@ border-bottom: 1px solid &quot;grey&quot;;
              <property name="styleSheet">
               <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
              </property>
              <property name="text">
@@ -2095,8 +2068,9 @@ border: transparent;</string>
              </property>
              <property name="styleSheet">
               <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
              </property>
              <property name="maxLength">
@@ -2130,7 +2104,7 @@ border-radius:5px;</string>
              <property name="styleSheet">
               <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
              </property>
              <property name="text">
@@ -2163,8 +2137,9 @@ border: transparent;</string>
              </property>
              <property name="styleSheet">
               <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
              </property>
              <property name="maxLength">
@@ -2198,7 +2173,7 @@ border-radius:5px;</string>
              <property name="styleSheet">
               <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
              </property>
              <property name="text">
@@ -2231,8 +2206,9 @@ border: transparent;</string>
              </property>
              <property name="styleSheet">
               <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
              </property>
              <property name="maxLength">
@@ -2323,7 +2299,7 @@ border: transparent;</string>
                  <property name="styleSheet">
                   <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
                  </property>
                  <property name="text">
@@ -2354,8 +2330,9 @@ border: transparent;</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
                  </property>
                  <property name="maxLength">
@@ -2406,7 +2383,7 @@ border-radius:5px;</string>
                  <property name="styleSheet">
                   <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
                  </property>
                  <property name="text">
@@ -2437,8 +2414,9 @@ border: transparent;</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
                  </property>
                  <property name="maxLength">
@@ -2520,7 +2498,7 @@ border: transparent;</string>
                  <property name="styleSheet">
                   <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
                  </property>
                  <property name="text">
@@ -2551,8 +2529,9 @@ border: transparent;</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
                  </property>
                  <property name="text">
@@ -2608,7 +2587,7 @@ border: transparent;</string>
                  <property name="styleSheet">
                   <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
                  </property>
                  <property name="text">
@@ -2639,8 +2618,9 @@ border: transparent;</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
                  </property>
                  <property name="text">
@@ -2723,7 +2703,7 @@ border: transparent;</string>
                  <property name="styleSheet">
                   <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
                  </property>
                  <property name="text">
@@ -2754,8 +2734,9 @@ border: transparent;</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
                  </property>
                  <property name="text">
@@ -2806,7 +2787,7 @@ border-radius:5px;</string>
                  <property name="styleSheet">
                   <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
                  </property>
                  <property name="text">
@@ -2837,8 +2818,9 @@ border: transparent;</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
                  </property>
                  <property name="text">
@@ -2882,7 +2864,7 @@ border-radius:5px;</string>
              <property name="styleSheet">
               <string notr="true">margin: 0px;
 padding: 0px;
-color: rgb(0, 0, 0);
+color: #E8EAED;
 border: transparent;</string>
              </property>
              <property name="text">
@@ -2915,8 +2897,9 @@ border: transparent;</string>
              </property>
              <property name="styleSheet">
               <string notr="true">padding: 5px;
-color: rgb(0, 0, 0);
-border: 1px solid rgb(109, 109, 109);
+color: #E8EAED;
+background-color: #161B22;
+border: 1px solid #30363D;
 border-radius:5px;</string>
              </property>
              <property name="maxLength">
@@ -2957,9 +2940,9 @@ border: transparent;</string>
                <font>
                 <family>Leelawadee UI</family>
                 <pointsize>11</pointsize>
-                <weight>50</weight>
+                <weight>75</weight>
                 <italic>false</italic>
-                <bold>false</bold>
+                <bold>true</bold>
                </font>
               </property>
               <property name="cursor">
@@ -2968,13 +2951,14 @@ border: transparent;</string>
               <property name="styleSheet">
                <string notr="true">QPushButton{
 	padding: 10px;
-	background-color: rgb(24, 12, 59);
-	border: transparent;
+	background-color: #3F51B5;
+	border: 1px solid #30363D;
 	border-radius:15px;
-	color: rgb(255, 255, 255);
-;}
+	color: #E8EAED;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
 QPushButton:hover{
-	background-color: rgb(61, 76, 161);
+	background-color: #5C6BC0;
 }
 </string>
               </property>
@@ -2999,9 +2983,9 @@ QPushButton:hover{
                <font>
                 <family>Leelawadee UI</family>
                 <pointsize>11</pointsize>
-                <weight>50</weight>
+                <weight>75</weight>
                 <italic>false</italic>
-                <bold>false</bold>
+                <bold>true</bold>
                </font>
               </property>
               <property name="cursor">
@@ -3010,13 +2994,14 @@ QPushButton:hover{
               <property name="styleSheet">
                <string notr="true">QPushButton{
 	padding: 10px;
-	background-color: rgb(24, 12, 59);
-	border: transparent;
+	background-color: #3F51B5;
+	border: 1px solid #30363D;
 	border-radius:15px;
-	color: rgb(255, 255, 255);
-;}
+	color: #E8EAED;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
 QPushButton:hover{
-	background-color: rgb(61, 76, 161);
+	background-color: #5C6BC0;
 }
 </string>
               </property>

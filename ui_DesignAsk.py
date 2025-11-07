@@ -33,7 +33,7 @@ class Ui_JanelaPrincipal(object):
         JanelaPrincipal.setSizePolicy(sizePolicy)
         JanelaPrincipal.setMinimumSize(QSize(0, 600))
         JanelaPrincipal.setMaximumSize(QSize(16777215, 663))
-        JanelaPrincipal.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        JanelaPrincipal.setStyleSheet(u"background-color: #0D1117;")
         self.centralwidget = QWidget(JanelaPrincipal)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -44,8 +44,8 @@ class Ui_JanelaPrincipal(object):
         self.FrameAcimaDeTodos.setObjectName(u"FrameAcimaDeTodos")
         self.FrameAcimaDeTodos.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"border: transparent;\n"
-"background-color: rgb(24, 12, 59);")
+"border: 1px solid #30363D;\n"
+"background-color: #161B22;")
         self.FrameAcimaDeTodos.setFrameShape(QFrame.StyledPanel)
         self.FrameAcimaDeTodos.setFrameShadow(QFrame.Raised)
         self.horizontalLayout = QHBoxLayout(self.FrameAcimaDeTodos)
@@ -54,6 +54,7 @@ class Ui_JanelaPrincipal(object):
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.frame_12 = QFrame(self.FrameAcimaDeTodos)
         self.frame_12.setObjectName(u"frame_12")
+        self.frame_12.setStyleSheet(u"border: none;")
         self.frame_12.setFrameShape(QFrame.StyledPanel)
         self.frame_12.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_12 = QHBoxLayout(self.frame_12)
@@ -69,7 +70,8 @@ class Ui_JanelaPrincipal(object):
         self.Titulo.setFont(font)
         self.Titulo.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(135, 163, 255);")
+"color: #3F51B5;\n"
+"border: none;")
         self.Titulo.setTextFormat(Qt.PlainText)
         self.Titulo.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
 
@@ -84,7 +86,8 @@ class Ui_JanelaPrincipal(object):
         self.Titulo_2.setFont(font1)
         self.Titulo_2.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(255, 255, 255);\n"
+"color: #E8EAED;\n"
+"border: none;\n"
 "")
         self.Titulo_2.setTextFormat(Qt.PlainText)
         self.Titulo_2.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
@@ -107,7 +110,7 @@ class Ui_JanelaPrincipal(object):
         font2 = QFont()
         font2.setFamilies([u"Leelawadee UI"])
         font2.setPointSize(11)
-        font2.setBold(False)
+        font2.setBold(True)
         font2.setItalic(False)
         self.btnCasa.setFont(font2)
         self.btnCasa.setCursor(QCursor(Qt.PointingHandCursor))
@@ -115,14 +118,12 @@ class Ui_JanelaPrincipal(object):
 "	padding: 5px;\n"
 "	border: none;\n"
 "	border-radius: 0px;\n"
-"	color: \"white\";\n"
+"	color: #E8EAED;\n"
 "	letter-spacing:1px;\n"
-"	font-weight: 500;\n"
 "	background-color: transparent;\n"
-"	font: \"Leelawadee\";\n"
 "}\n"
 "QPushButton:hover{\n"
-"	background-color: rgb(61, 76, 161);\n"
+"	background-color: #5C6BC0;\n"
 "}")
 
         self.horizontalLayout.addWidget(self.btnCasa)
@@ -139,14 +140,12 @@ class Ui_JanelaPrincipal(object):
 "	padding: 5px;\n"
 "	border: none;\n"
 "	border-radius: 0px;\n"
-"	color: \"white\";\n"
+"	color: #E8EAED;\n"
 "	letter-spacing:1px;\n"
-"	font-weight: 500;\n"
 "	background-color: transparent;\n"
-"	font: \"Leelawadee\";\n"
 "}\n"
 "QPushButton:hover{\n"
-"	background-color: rgb(61, 76, 161);\n"
+"	background-color: #5C6BC0;\n"
 "}")
 
         self.horizontalLayout.addWidget(self.btnSobre)
@@ -163,14 +162,12 @@ class Ui_JanelaPrincipal(object):
 "	padding: 5px;\n"
 "	border: none;\n"
 "	border-radius: 0px;\n"
-"	color: \"white\";\n"
+"	color: #E8EAED;\n"
 "	letter-spacing:1px;\n"
-"	font-weight: 500;\n"
 "	background-color: transparent;\n"
-"	font: \"Leelawadee\";\n"
 "}\n"
 "QPushButton:hover{\n"
-"	background-color: rgb(61, 76, 161);\n"
+"	background-color: #5C6BC0;\n"
 "}")
 
         self.horizontalLayout.addWidget(self.btnContato)
@@ -181,9 +178,7 @@ class Ui_JanelaPrincipal(object):
         self.Paginas = QStackedWidget(self.centralwidget)
         self.Paginas.setObjectName(u"Paginas")
         self.Paginas.setMaximumSize(QSize(16777211, 16777215))
-        self.Paginas.setStyleSheet(u"border-radius:2px;\n"
-"background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(0, 16, 223, 0), stop:0.994318 rgba(105, 80, 219, 0));\n"
-"")
+        self.Paginas.setStyleSheet(u"background-color: transparent;")
         self.pg_inicial = QWidget()
         self.pg_inicial.setObjectName(u"pg_inicial")
         self.verticalLayout_2 = QVBoxLayout(self.pg_inicial)
@@ -200,9 +195,8 @@ class Ui_JanelaPrincipal(object):
         self.FrameSearch.setLayoutDirection(Qt.LeftToRight)
         self.FrameSearch.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"border: transparent;\n"
-"border-radius: 20px;\n"
-"background-color: rgb(255, 255, 255);")
+"border-radius: 5px;\n"
+"background-color: #161B22;")
         self.FrameSearch.setFrameShape(QFrame.StyledPanel)
         self.FrameSearch.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_2 = QHBoxLayout(self.FrameSearch)
@@ -214,19 +208,22 @@ class Ui_JanelaPrincipal(object):
         font3 = QFont()
         font3.setFamilies([u"Leelawadee UI"])
         font3.setPointSize(11)
-        font3.setBold(False)
+        font3.setBold(True)
         self.btnPesquisar.setFont(font3)
         self.btnPesquisar.setCursor(QCursor(Qt.PointingHandCursor))
         self.btnPesquisar.setStyleSheet(u"QPushButton{\n"
 "	padding: 10px;\n"
-"	background-color: rgb(24, 12, 59);\n"
-"	border: transparent;\n"
+"	background-color: #3F51B5;\n"
+"	border: 1px solid #30363D;\n"
 "	border-top-right-radius:0px;\n"
 "	border-bottom-right-radius: 0px;	\n"
-"	color: rgb(255, 255, 255);\n"
-";}\n"
+"	border-top-left-radius: 5px;\n"
+"	border-bottom-left-radius: 5px;\n"
+"	color: #E8EAED;\n"
+"    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);\n"
+"}\n"
 "QPushButton:hover{\n"
-"	background-color: rgb(61, 76, 161);\n"
+"	background-color: #5C6BC0;\n"
 "}\n"
 "")
 
@@ -236,11 +233,16 @@ class Ui_JanelaPrincipal(object):
         self.CampoPesquisa.setObjectName(u"CampoPesquisa")
         self.CampoPesquisa.setMinimumSize(QSize(0, 40))
         self.CampoPesquisa.setMaximumSize(QSize(16777215, 40))
-        self.CampoPesquisa.setFont(font3)
+        font4 = QFont()
+        font4.setFamilies([u"Leelawadee UI"])
+        font4.setPointSize(11)
+        font4.setBold(False)
+        self.CampoPesquisa.setFont(font4)
         self.CampoPesquisa.setStyleSheet(u"margin: 0px;\n"
 "padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:0px;")
         self.CampoPesquisa.setMaxLength(50)
         self.CampoPesquisa.setClearButtonEnabled(True)
@@ -254,159 +256,124 @@ class Ui_JanelaPrincipal(object):
         self.btnCadastrar.setLayoutDirection(Qt.LeftToRight)
         self.btnCadastrar.setStyleSheet(u"QPushButton{\n"
 "	padding: 10px;\n"
-"	background-color: rgb(24, 12, 59);\n"
-"	border: transparent;\n"
+"	background-color: #3F51B5;\n"
+"	border: 1px solid #30363D;\n"
 "	border-top-left-radius:0px;\n"
 "	border-bottom-left-radius: 0px;\n"
-"	color: rgb(255, 255, 255);\n"
-";}\n"
+"	border-top-right-radius: 5px;\n"
+"	border-bottom-right-radius: 5px;\n"
+"	color: #E8EAED;\n"
+"    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);\n"
+"}\n"
 "QPushButton:hover{\n"
-"	background-color: rgb(61, 76, 161);\n"
+"	background-color: #5C6BC0;\n"
 "}\n"
 "")
 
         self.horizontalLayout_2.addWidget(self.btnCadastrar)
+
+
         self.verticalLayout_2.addWidget(self.FrameSearch)
 
         self.tb_usuarios = QTableWidget(self.pg_inicial)
         if (self.tb_usuarios.columnCount() < 10):
             self.tb_usuarios.setColumnCount(10)
-            
-        font4 = QFont()
-        font4.setFamilies([u"Leelawadee UI"])
-        font4.setPointSize(10)
-        font4.setBold(False)
-        font4.setKerning(True)
-        __qtablewidgetitem = QTableWidgetItem()
-        __qtablewidgetitem.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem.setFont(font4);
-        self.tb_usuarios.setColumnHidden(0, True)
-        self.tb_usuarios.setHorizontalHeaderItem(0, __qtablewidgetitem)
         font5 = QFont()
         font5.setFamilies([u"Leelawadee UI"])
         font5.setPointSize(10)
         font5.setBold(False)
+        font5.setKerning(True)
+        __qtablewidgetitem = QTableWidgetItem()
+        __qtablewidgetitem.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem.setFont(font5);
+        self.tb_usuarios.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        font6 = QFont()
+        font6.setFamilies([u"Leelawadee UI"])
+        font6.setPointSize(10)
+        font6.setBold(False)
         __qtablewidgetitem1 = QTableWidgetItem()
         __qtablewidgetitem1.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem1.setFont(font5);
+        __qtablewidgetitem1.setFont(font6);
         self.tb_usuarios.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         __qtablewidgetitem2 = QTableWidgetItem()
         __qtablewidgetitem2.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem2.setFont(font5);
+        __qtablewidgetitem2.setFont(font6);
         self.tb_usuarios.setHorizontalHeaderItem(2, __qtablewidgetitem2)
         __qtablewidgetitem3 = QTableWidgetItem()
         __qtablewidgetitem3.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem3.setFont(font5);
+        __qtablewidgetitem3.setFont(font6);
         self.tb_usuarios.setHorizontalHeaderItem(3, __qtablewidgetitem3)
         __qtablewidgetitem4 = QTableWidgetItem()
         __qtablewidgetitem4.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem4.setFont(font5);
+        __qtablewidgetitem4.setFont(font6);
         self.tb_usuarios.setHorizontalHeaderItem(4, __qtablewidgetitem4)
         __qtablewidgetitem5 = QTableWidgetItem()
         __qtablewidgetitem5.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem5.setFont(font5);
+        __qtablewidgetitem5.setFont(font6);
         self.tb_usuarios.setHorizontalHeaderItem(5, __qtablewidgetitem5)
         __qtablewidgetitem6 = QTableWidgetItem()
         __qtablewidgetitem6.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem6.setFont(font5);
+        __qtablewidgetitem6.setFont(font6);
         self.tb_usuarios.setHorizontalHeaderItem(6, __qtablewidgetitem6)
         __qtablewidgetitem7 = QTableWidgetItem()
         __qtablewidgetitem7.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem7.setFont(font5);
+        __qtablewidgetitem7.setFont(font6);
         self.tb_usuarios.setHorizontalHeaderItem(7, __qtablewidgetitem7)
         __qtablewidgetitem8 = QTableWidgetItem()
         __qtablewidgetitem8.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem8.setFont(font5);
+        __qtablewidgetitem8.setFont(font6);
         self.tb_usuarios.setHorizontalHeaderItem(8, __qtablewidgetitem8)
         __qtablewidgetitem9 = QTableWidgetItem()
         __qtablewidgetitem9.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem9.setFont(font5);
+        __qtablewidgetitem9.setFont(font6);
         self.tb_usuarios.setHorizontalHeaderItem(9, __qtablewidgetitem9)
         self.tb_usuarios.setObjectName(u"tb_usuarios")
         sizePolicy.setHeightForWidth(self.tb_usuarios.sizePolicy().hasHeightForWidth())
         self.tb_usuarios.setSizePolicy(sizePolicy)
-
         self.tb_usuarios.viewport().setProperty("cursor", QCursor(Qt.PointingHandCursor))
-        self.tb_usuarios.setStyleSheet(u"QHeaderView:section{\n"
-"	padding: 5px;\n"
-"	background-color: rgb(255, 255, 255);\n"
-"	color: rgb(0, 0, 0);\n"
-"	border: transparent;\n"
-"	border-right: 1px solid rgb(199, 199, 199);\n"
-"	border-bottom: 1px solid rgb(199, 199, 199);\n"
-"}\n"
-"QHeaderView:section:hover{\n"
-"	background-color: rgb(231, 231, 239);\n"
+        self.tb_usuarios.setStyleSheet(u"QTableWidget {\n"
+"    background-color: #161B22;\n"
+"    color: #E8EAED;\n"
+"    border: 1px solid #30363D;\n"
+"    gridline-color: #30363D;\n"
 "}\n"
 "\n"
-"QTableWidget{\n"
-"	background-color: rgb(255, 255, 255);\n"
-"	border: 1px solid rgb(199, 199, 199);\n"
+"QHeaderView::section {\n"
+"    background-color: #1E232A;\n"
+"    color: #E8EAED;\n"
+"    padding: 5px;\n"
+"    border: 1px solid #30363D;\n"
 "}\n"
 "\n"
-"/*Mexendo no scrollbar*/\n"
-"\n"
-"QScrollBar:horizontal{\n"
-"	border: transparent;\n"
-"	border-radius: 0px;\n"
-"	background-color: rgb(231, 231, 239);\n"
-"	height: 13px;\n"
+"QScrollBar:vertical, QScrollBar:horizontal {\n"
+"    border: 1px solid #30363D;\n"
+"    background: #161B22;\n"
+"    width: 15px;\n"
+"    margin: 22px 0 22px 0;\n"
 "}\n"
 "\n"
-"QScrollBar::handle:horizontal{\n"
-"	background-color: rgb(24, 12, 59);\n"
-"	/*min-height: 10px;*/\n"
-"	border-radius: 5px;\n"
+"QScrollBar::handle:vertical, QScrollBar::handle:horizontal {\n"
+"    background: #3F51B5;\n"
+"    min-height: 20px;\n"
 "}\n"
 "\n"
-"QScrollBar::handle:horizontal:hover{\n"
-"	background-color: rgb(61, 76, 161);\n"
+"QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,\n"
+"QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {\n"
+"    border: 1px solid #30363D;\n"
+"    background: #1E232A;\n"
+"    height: 20px;\n"
+"    subcontrol-position: top;\n"
+"    subcontrol-origin: margin;\n"
 "}\n"
 "\n"
-"/*Mexendo na seta direita*/\n"
-"QScollBar::sub-line:horizontal{\n"
-"	border:transparent;\n"
-"	background-color: rgba(203, 204, 210, 150);\n"
-"	height: 15px;\n"
-"	bor"
-                        "der-top-left-radius: 10px;\n"
-"	border-top-right-radius: 10px;\n"
-"	subcontrol-position:top;\n"
-"	subcontrol-origin: margin;\n"
-"}\n"
-"QScollBar::sub-line:horizontal:hover {\n"
-"	background-color: rgb(61, 76, 161);\n"
-"}\n"
-"\n"
-"/*Mexendo na seta esquerda*/\n"
-"QScollBar::add-line:vertical {\n"
-"	border:none;\n"
-"    background-color: rgba(203, 204, 210, 150);		\n"
-"	height: 15px;\n"
-"	border-top-left-radius: 7px;\n"
-"	border-top-right-radius: 7px;\n"
-"	subcontrol-position:bottom;\n"
-"	subcontrol-origin: margin;\n"
-"}\n"
-"QScollBar::add-line:horizontal:hover {\n"
-"	background-color: rgb(61, 76, 161);\n"
-"}\n"
-"\n"
-"/*Mexendo nas setas direita e esquerda*/\n"
-"QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal{\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));\n"
-"}\n"
-"\n"
-"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal{\n"
-"		background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,"
-                        " stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));\n"
-"}\n"
-"\n"
-"\n"
-"\n"
-"")
-
-        self.tb_usuarios.horizontalHeader().setMinimumSectionSize(120)
+"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical,\n"
+"QScrollBar::"
+                        "left-arrow:horizontal, QScrollBar::right-arrow:horizontal {\n"
+"     width: 3px;\n"
+"     height: 3px;\n"
+"     background: #E8EAED;\n"
+"}")
+        self.tb_usuarios.horizontalHeader().setMinimumSectionSize(100)
         self.tb_usuarios.horizontalHeader().setDefaultSectionSize(150)
 
         self.verticalLayout_2.addWidget(self.tb_usuarios)
@@ -420,7 +387,7 @@ class Ui_JanelaPrincipal(object):
         self.horizontalLayout_8.setContentsMargins(0, 0, 0, 0)
         self.frame_5 = QFrame(self.pg_sobre)
         self.frame_5.setObjectName(u"frame_5")
-        self.frame_5.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.frame_5.setStyleSheet(u"background-color: #0D1117;")
         self.frame_5.setFrameShape(QFrame.StyledPanel)
         self.frame_5.setFrameShadow(QFrame.Raised)
         self.verticalLayout_3 = QVBoxLayout(self.frame_5)
@@ -428,25 +395,20 @@ class Ui_JanelaPrincipal(object):
         self.verticalLayout_3.setContentsMargins(20, 20, 20, 20)
         self.ConteudoSobre = QTextBrowser(self.frame_5)
         self.ConteudoSobre.setObjectName(u"ConteudoSobre")
-        font6 = QFont()
-        font6.setFamilies([u"Leelawadee UI"])
-        font6.setPointSize(10)
-        font6.setBold(False)
-        font6.setItalic(False)
-        self.ConteudoSobre.setFont(font6)
+        font7 = QFont()
+        font7.setFamilies([u"Leelawadee UI"])
+        font7.setPointSize(10)
+        font7.setBold(False)
+        font7.setItalic(False)
+        self.ConteudoSobre.setFont(font7)
         self.ConteudoSobre.viewport().setProperty("cursor", QCursor(Qt.UpArrowCursor))
-        self.ConteudoSobre.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+        self.ConteudoSobre.setStyleSheet(u"background-color: #161B22;\n"
 "padding: 10px;\n"
-"color: rgb(21, 21, 21);\n"
-"border: 1px solid rgb(199, 199, 199);\n"
-"border-radius:10px;\n"
-"font: \"Leelawadee UI\";")
-
+"color: #E8EAED;\n"
+"border: 1px solid #30363D;\n"
+"border-radius:10px;")
         self.verticalLayout_3.addWidget(self.ConteudoSobre)
-
-
         self.horizontalLayout_8.addWidget(self.frame_5)
-
         self.Paginas.addWidget(self.pg_sobre)
         self.pg_contato = QWidget()
         self.pg_contato.setObjectName(u"pg_contato")
@@ -456,7 +418,7 @@ class Ui_JanelaPrincipal(object):
         self.horizontalLayout_7.setContentsMargins(0, 0, 0, 0)
         self.frame_4 = QFrame(self.pg_contato)
         self.frame_4.setObjectName(u"frame_4")
-        self.frame_4.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.frame_4.setStyleSheet(u"background-color: #0D1117;")
         self.frame_4.setFrameShape(QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QFrame.Raised)
         self.verticalLayout_6 = QVBoxLayout(self.frame_4)
@@ -465,18 +427,17 @@ class Ui_JanelaPrincipal(object):
         self.verticalLayout_6.setContentsMargins(20, 20, 20, 20)
         self.ConteudoContato = QTextBrowser(self.frame_4)
         self.ConteudoContato.setObjectName(u"ConteudoContato")
-        font7 = QFont()
-        font7.setFamilies([u"Liberation Sans"])
-        font7.setBold(False)
-        font7.setItalic(False)
-        self.ConteudoContato.setFont(font7)
+        font8 = QFont()
+        font8.setFamilies([u"Liberation Sans"])
+        font8.setBold(False)
+        font8.setItalic(False)
+        self.ConteudoContato.setFont(font8)
         self.ConteudoContato.viewport().setProperty("cursor", QCursor(Qt.UpArrowCursor))
-        self.ConteudoContato.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+        self.ConteudoContato.setStyleSheet(u"background-color: #161B22;\n"
 "padding: 10px;\n"
-"color: rgb(21, 21, 21);\n"
-"border: 1px solid rgb(199, 199, 199);\n"
-"border-radius:10px;\n"
-"font: \"Leelawadee UI\";")
+"color: #E8EAED;\n"
+"border: 1px solid #30363D;\n"
+"border-radius:10px;")
 
         self.verticalLayout_6.addWidget(self.ConteudoContato)
 
@@ -499,12 +460,11 @@ class Ui_JanelaPrincipal(object):
         self.frame_9.setSizePolicy(sizePolicy2)
         self.frame_9.setMinimumSize(QSize(300, 250))
         self.frame_9.setMaximumSize(QSize(300, 250))
-        self.frame_9.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+        self.frame_9.setStyleSheet(u"background-color: #161B22;\n"
 "padding: 10px;\n"
-"color: rgb(21, 21, 21);\n"
-"border: 1px solid rgb(199, 199, 199);\n"
-"border-radius:10px;\n"
-"font: \"Leelawadee UI\";")
+"color: #E8EAED;\n"
+"border: 1px solid #30363D;\n"
+"border-radius:10px;")
         self.frame_9.setFrameShape(QFrame.StyledPanel)
         self.frame_9.setFrameShadow(QFrame.Raised)
         self.verticalLayout_7 = QVBoxLayout(self.frame_9)
@@ -515,13 +475,18 @@ class Ui_JanelaPrincipal(object):
         self.label_18.setObjectName(u"label_18")
         sizePolicy1.setHeightForWidth(self.label_18.sizePolicy().hasHeightForWidth())
         self.label_18.setSizePolicy(sizePolicy1)
-        self.label_18.setFont(font2)
+        font9 = QFont()
+        font9.setFamilies([u"Leelawadee UI"])
+        font9.setPointSize(11)
+        font9.setBold(True)
+        font9.setItalic(False)
+        self.label_18.setFont(font9)
         self.label_18.setStyleSheet(u"margin: 0px;\n"
-"padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"padding: 5px;\n"
+"color: #E8EAED;\n"
 "border: transparent;\n"
 "border-radius: 0px;\n"
-"border-bottom: 1px solid \"grey\";")
+"border-bottom: 1px solid #30363D;")
         self.label_18.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_7.addWidget(self.label_18)
@@ -530,17 +495,18 @@ class Ui_JanelaPrincipal(object):
         self.btnAnunciar.setObjectName(u"btnAnunciar")
         self.btnAnunciar.setMinimumSize(QSize(0, 45))
         self.btnAnunciar.setMaximumSize(QSize(16777215, 45))
-        self.btnAnunciar.setFont(font2)
+        self.btnAnunciar.setFont(font9)
         self.btnAnunciar.setCursor(QCursor(Qt.PointingHandCursor))
         self.btnAnunciar.setStyleSheet(u"QPushButton{\n"
 "	padding: 10px;\n"
-"	background-color: rgb(24, 12, 59);\n"
-"	border: transparent;\n"
+"	background-color: #3F51B5;\n"
+"	border: 1px solid #30363D;\n"
 "	border-radius:15px;\n"
-"	color: rgb(255, 255, 255);\n"
-";}\n"
+"	color: #E8EAED;\n"
+"    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);\n"
+"}\n"
 "QPushButton:hover{\n"
-"	background-color: rgb(61, 76, 161);\n"
+"	background-color: #5C6BC0;\n"
 "}\n"
 "")
 
@@ -550,17 +516,18 @@ class Ui_JanelaPrincipal(object):
         self.btnSolicitar.setObjectName(u"btnSolicitar")
         self.btnSolicitar.setMinimumSize(QSize(0, 45))
         self.btnSolicitar.setMaximumSize(QSize(16777215, 45))
-        self.btnSolicitar.setFont(font2)
+        self.btnSolicitar.setFont(font9)
         self.btnSolicitar.setCursor(QCursor(Qt.PointingHandCursor))
         self.btnSolicitar.setStyleSheet(u"QPushButton{\n"
 "	padding: 10px;\n"
-"	background-color: rgb(24, 12, 59);\n"
-"	border: transparent;\n"
+"	background-color: #3F51B5;\n"
+"	border: 1px solid #30363D;\n"
 "	border-radius:15px;\n"
-"	color: rgb(255, 255, 255);\n"
-";}\n"
+"	color: #E8EAED;\n"
+"    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);\n"
+"}\n"
 "QPushButton:hover{\n"
-"	background-color: rgb(61, 76, 161);\n"
+"	background-color: #5C6BC0;\n"
 "}\n"
 "")
 
@@ -570,17 +537,18 @@ class Ui_JanelaPrincipal(object):
         self.btnVoltarInicio.setObjectName(u"btnVoltarInicio")
         self.btnVoltarInicio.setMinimumSize(QSize(0, 45))
         self.btnVoltarInicio.setMaximumSize(QSize(16777215, 45))
-        self.btnVoltarInicio.setFont(font2)
+        self.btnVoltarInicio.setFont(font9)
         self.btnVoltarInicio.setCursor(QCursor(Qt.PointingHandCursor))
         self.btnVoltarInicio.setStyleSheet(u"QPushButton{\n"
 "	padding: 10px;\n"
-"	background-color: rgb(24, 12, 59);\n"
-"	border: transparent;\n"
+"	background-color: #3F51B5;\n"
+"	border: 1px solid #30363D;\n"
 "	border-radius:15px;\n"
-"	color: rgb(255, 255, 255);\n"
-";}\n"
+"	color: #E8EAED;\n"
+"    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);\n"
+"}\n"
 "QPushButton:hover{\n"
-"	background-color: rgb(61, 76, 161);\n"
+"	background-color: #5C6BC0;\n"
 "}\n"
 "")
 
@@ -608,12 +576,11 @@ class Ui_JanelaPrincipal(object):
         self.frame_7.setMaximumSize(QSize(350, 385))
         self.frame_7.setStyleSheet(u"margin: 0px;\n"
 "padding: 10px;\n"
-"border: transparent;\n"
-"background-color: rgb(255, 255, 255);\n"
-"color: rgb(21, 21, 21);\n"
-"border: 1px solid rgb(199, 199, 199);\n"
+"background-color: #161B22;\n"
+"color: #E8EAED;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:10px;\n"
-"font: \"Leelawadee UI\";")
+"")
         self.frame_7.setFrameShape(QFrame.StyledPanel)
         self.frame_7.setFrameShadow(QFrame.Raised)
         self.verticalLayout_9 = QVBoxLayout(self.frame_7)
@@ -624,18 +591,18 @@ class Ui_JanelaPrincipal(object):
         self.label_17.setObjectName(u"label_17")
         sizePolicy1.setHeightForWidth(self.label_17.sizePolicy().hasHeightForWidth())
         self.label_17.setSizePolicy(sizePolicy1)
-        font8 = QFont()
-        font8.setFamilies([u"Liberation Sans"])
-        font8.setPointSize(12)
-        font8.setBold(False)
-        font8.setItalic(False)
-        self.label_17.setFont(font8)
+        font10 = QFont()
+        font10.setFamilies([u"Liberation Sans"])
+        font10.setPointSize(12)
+        font10.setBold(True)
+        font10.setItalic(False)
+        self.label_17.setFont(font10)
         self.label_17.setStyleSheet(u"margin: 0px;\n"
 "padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;\n"
 "border-radius: 0px;\n"
-"border-bottom: 1px solid \"grey\";\n"
+"border-bottom: 1px solid #30363D;\n"
 "")
         self.label_17.setAlignment(Qt.AlignCenter)
 
@@ -647,10 +614,15 @@ class Ui_JanelaPrincipal(object):
         self.label_12.setSizePolicy(sizePolicy1)
         self.label_12.setMinimumSize(QSize(0, 30))
         self.label_12.setMaximumSize(QSize(16777215, 30))
-        self.label_12.setFont(font2)
+        font11 = QFont()
+        font11.setFamilies([u"Leelawadee UI"])
+        font11.setPointSize(11)
+        font11.setBold(False)
+        font11.setItalic(False)
+        self.label_12.setFont(font11)
         self.label_12.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
 
         self.verticalLayout_9.addWidget(self.label_12)
@@ -659,10 +631,11 @@ class Ui_JanelaPrincipal(object):
         self.txtNomeCliente.setObjectName(u"txtNomeCliente")
         self.txtNomeCliente.setMinimumSize(QSize(0, 35))
         self.txtNomeCliente.setMaximumSize(QSize(16777215, 35))
-        self.txtNomeCliente.setFont(font2)
+        self.txtNomeCliente.setFont(font11)
         self.txtNomeCliente.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtNomeCliente.setMaxLength(32767)
         self.txtNomeCliente.setFrame(True)
@@ -676,10 +649,10 @@ class Ui_JanelaPrincipal(object):
         self.label_13.setSizePolicy(sizePolicy1)
         self.label_13.setMinimumSize(QSize(0, 30))
         self.label_13.setMaximumSize(QSize(16777215, 30))
-        self.label_13.setFont(font2)
+        self.label_13.setFont(font11)
         self.label_13.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
 
         self.verticalLayout_9.addWidget(self.label_13)
@@ -688,10 +661,11 @@ class Ui_JanelaPrincipal(object):
         self.txtEmailCliente.setObjectName(u"txtEmailCliente")
         self.txtEmailCliente.setMinimumSize(QSize(0, 35))
         self.txtEmailCliente.setMaximumSize(QSize(16777215, 35))
-        self.txtEmailCliente.setFont(font2)
+        self.txtEmailCliente.setFont(font11)
         self.txtEmailCliente.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtEmailCliente.setMaxLength(50)
         self.txtEmailCliente.setClearButtonEnabled(True)
@@ -704,10 +678,10 @@ class Ui_JanelaPrincipal(object):
         self.label_14.setSizePolicy(sizePolicy1)
         self.label_14.setMinimumSize(QSize(0, 30))
         self.label_14.setMaximumSize(QSize(16777215, 30))
-        self.label_14.setFont(font2)
+        self.label_14.setFont(font11)
         self.label_14.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
 
         self.verticalLayout_9.addWidget(self.label_14)
@@ -716,10 +690,11 @@ class Ui_JanelaPrincipal(object):
         self.txtTelefoneCliente.setObjectName(u"txtTelefoneCliente")
         self.txtTelefoneCliente.setMinimumSize(QSize(0, 35))
         self.txtTelefoneCliente.setMaximumSize(QSize(16777215, 35))
-        self.txtTelefoneCliente.setFont(font2)
+        self.txtTelefoneCliente.setFont(font11)
         self.txtTelefoneCliente.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtTelefoneCliente.setMaxLength(9)
         self.txtTelefoneCliente.setClearButtonEnabled(True)
@@ -756,10 +731,10 @@ class Ui_JanelaPrincipal(object):
         self.label_19.setSizePolicy(sizePolicy1)
         self.label_19.setMinimumSize(QSize(0, 30))
         self.label_19.setMaximumSize(QSize(16777215, 30))
-        self.label_19.setFont(font2)
+        self.label_19.setFont(font11)
         self.label_19.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
 
         self.verticalLayout_5.addWidget(self.label_19)
@@ -768,10 +743,11 @@ class Ui_JanelaPrincipal(object):
         self.txtSenhaCliente.setObjectName(u"txtSenhaCliente")
         self.txtSenhaCliente.setMinimumSize(QSize(0, 35))
         self.txtSenhaCliente.setMaximumSize(QSize(16777215, 35))
-        self.txtSenhaCliente.setFont(font2)
+        self.txtSenhaCliente.setFont(font11)
         self.txtSenhaCliente.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtSenhaCliente.setMaxLength(5)
         self.txtSenhaCliente.setEchoMode(QLineEdit.Password)
@@ -799,10 +775,10 @@ class Ui_JanelaPrincipal(object):
         self.label_20.setSizePolicy(sizePolicy1)
         self.label_20.setMinimumSize(QSize(0, 30))
         self.label_20.setMaximumSize(QSize(16777215, 30))
-        self.label_20.setFont(font2)
+        self.label_20.setFont(font11)
         self.label_20.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
 
         self.verticalLayout_8.addWidget(self.label_20)
@@ -811,10 +787,11 @@ class Ui_JanelaPrincipal(object):
         self.txtConfirmarSenhaCliente.setObjectName(u"txtConfirmarSenhaCliente")
         self.txtConfirmarSenhaCliente.setMinimumSize(QSize(0, 35))
         self.txtConfirmarSenhaCliente.setMaximumSize(QSize(16777215, 35))
-        self.txtConfirmarSenhaCliente.setFont(font2)
+        self.txtConfirmarSenhaCliente.setFont(font11)
         self.txtConfirmarSenhaCliente.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtConfirmarSenhaCliente.setMaxLength(5)
         self.txtConfirmarSenhaCliente.setEchoMode(QLineEdit.Password)
@@ -848,17 +825,18 @@ class Ui_JanelaPrincipal(object):
         self.btnConcluirCliente.setSizePolicy(sizePolicy5)
         self.btnConcluirCliente.setMinimumSize(QSize(0, 35))
         self.btnConcluirCliente.setMaximumSize(QSize(16777215, 35))
-        self.btnConcluirCliente.setFont(font2)
+        self.btnConcluirCliente.setFont(font9)
         self.btnConcluirCliente.setCursor(QCursor(Qt.PointingHandCursor))
         self.btnConcluirCliente.setStyleSheet(u"QPushButton{\n"
 "	padding: 10px;\n"
-"	background-color: rgb(24, 12, 59);\n"
-"	border: transparent;\n"
+"	background-color: #3F51B5;\n"
+"	border: 1px solid #30363D;\n"
 "	border-radius:15px;\n"
-"	color: rgb(255, 255, 255);\n"
-";}\n"
+"	color: #E8EAED;\n"
+"    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);\n"
+"}\n"
 "QPushButton:hover{\n"
-"	background-color: rgb(61, 76, 161);\n"
+"	background-color: #5C6BC0;\n"
 "}\n"
 "")
 
@@ -870,17 +848,18 @@ class Ui_JanelaPrincipal(object):
         self.btnCancelarCliente.setSizePolicy(sizePolicy5)
         self.btnCancelarCliente.setMinimumSize(QSize(0, 35))
         self.btnCancelarCliente.setMaximumSize(QSize(16777215, 35))
-        self.btnCancelarCliente.setFont(font2)
+        self.btnCancelarCliente.setFont(font9)
         self.btnCancelarCliente.setCursor(QCursor(Qt.PointingHandCursor))
         self.btnCancelarCliente.setStyleSheet(u"QPushButton{\n"
 "	padding: 10px;\n"
-"	background-color: rgb(24, 12, 59);\n"
-"	border: transparent;\n"
+"	background-color: #3F51B5;\n"
+"	border: 1px solid #30363D;\n"
 "	border-radius:15px;\n"
-"	color: rgb(255, 255, 255);\n"
-";}\n"
+"	color: #E8EAED;\n"
+"    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);\n"
+"}\n"
 "QPushButton:hover{\n"
-"	background-color: rgb(61, 76, 161);\n"
+"	background-color: #5C6BC0;\n"
 "}\n"
 "")
 
@@ -907,12 +886,11 @@ class Ui_JanelaPrincipal(object):
         self.frame.setMaximumSize(QSize(400, 16777215))
         self.frame.setStyleSheet(u"margin: 0px;\n"
 "padding: 10px;\n"
-"border: transparent;\n"
-"background-color: rgb(255, 255, 255);\n"
-"color: rgb(21, 21, 21);\n"
-"border: 1px solid rgb(199, 199, 199);\n"
+"background-color: #161B22;\n"
+"color: #E8EAED;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:10px;\n"
-"font: \"Leelawadee\";")
+"")
         self.frame.setFrameShape(QFrame.NoFrame)
         self.frame.setFrameShadow(QFrame.Plain)
         self.verticalLayout_4 = QVBoxLayout(self.frame)
@@ -923,13 +901,13 @@ class Ui_JanelaPrincipal(object):
         self.label.setObjectName(u"label")
         sizePolicy1.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
         self.label.setSizePolicy(sizePolicy1)
-        self.label.setFont(font8)
+        self.label.setFont(font10)
         self.label.setStyleSheet(u"margin: 0px;\n"
 "padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;\n"
 "border-radius: 0px;\n"
-"border-bottom: 1px solid \"grey\";\n"
+"border-bottom: 1px solid #30363D;\n"
 "")
         self.label.setAlignment(Qt.AlignCenter)
 
@@ -939,10 +917,10 @@ class Ui_JanelaPrincipal(object):
         self.label_2.setObjectName(u"label_2")
         sizePolicy1.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
         self.label_2.setSizePolicy(sizePolicy1)
-        self.label_2.setFont(font2)
+        self.label_2.setFont(font11)
         self.label_2.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
 
         self.verticalLayout_4.addWidget(self.label_2)
@@ -951,10 +929,11 @@ class Ui_JanelaPrincipal(object):
         self.txtNome.setObjectName(u"txtNome")
         self.txtNome.setMinimumSize(QSize(0, 35))
         self.txtNome.setMaximumSize(QSize(16777215, 35))
-        self.txtNome.setFont(font2)
+        self.txtNome.setFont(font11)
         self.txtNome.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtNome.setMaxLength(50)
         self.txtNome.setClearButtonEnabled(True)
@@ -965,10 +944,10 @@ class Ui_JanelaPrincipal(object):
         self.label_3.setObjectName(u"label_3")
         sizePolicy1.setHeightForWidth(self.label_3.sizePolicy().hasHeightForWidth())
         self.label_3.setSizePolicy(sizePolicy1)
-        self.label_3.setFont(font2)
+        self.label_3.setFont(font11)
         self.label_3.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
 
         self.verticalLayout_4.addWidget(self.label_3)
@@ -977,10 +956,11 @@ class Ui_JanelaPrincipal(object):
         self.txtEmail.setObjectName(u"txtEmail")
         self.txtEmail.setMinimumSize(QSize(0, 35))
         self.txtEmail.setMaximumSize(QSize(16777215, 35))
-        self.txtEmail.setFont(font2)
+        self.txtEmail.setFont(font11)
         self.txtEmail.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtEmail.setMaxLength(50)
         self.txtEmail.setClearButtonEnabled(True)
@@ -991,10 +971,10 @@ class Ui_JanelaPrincipal(object):
         self.label_4.setObjectName(u"label_4")
         sizePolicy1.setHeightForWidth(self.label_4.sizePolicy().hasHeightForWidth())
         self.label_4.setSizePolicy(sizePolicy1)
-        self.label_4.setFont(font2)
+        self.label_4.setFont(font11)
         self.label_4.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
 
         self.verticalLayout_4.addWidget(self.label_4)
@@ -1003,10 +983,11 @@ class Ui_JanelaPrincipal(object):
         self.txtTelefone.setObjectName(u"txtTelefone")
         self.txtTelefone.setMinimumSize(QSize(0, 35))
         self.txtTelefone.setMaximumSize(QSize(16777215, 35))
-        self.txtTelefone.setFont(font2)
+        self.txtTelefone.setFont(font11)
         self.txtTelefone.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtTelefone.setMaxLength(9)
         self.txtTelefone.setClearButtonEnabled(True)
@@ -1037,20 +1018,21 @@ class Ui_JanelaPrincipal(object):
         self.label_5.setObjectName(u"label_5")
         sizePolicy1.setHeightForWidth(self.label_5.sizePolicy().hasHeightForWidth())
         self.label_5.setSizePolicy(sizePolicy1)
-        self.label_5.setFont(font2)
+        self.label_5.setFont(font11)
         self.label_5.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
         self.splitter_6.addWidget(self.label_5)
         self.txtRua = QLineEdit(self.splitter_6)
         self.txtRua.setObjectName(u"txtRua")
         self.txtRua.setMinimumSize(QSize(0, 35))
         self.txtRua.setMaximumSize(QSize(16777215, 35))
-        self.txtRua.setFont(font2)
+        self.txtRua.setFont(font11)
         self.txtRua.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtRua.setMaxLength(30)
         self.txtRua.setClearButtonEnabled(True)
@@ -1068,20 +1050,21 @@ class Ui_JanelaPrincipal(object):
         self.label_6.setObjectName(u"label_6")
         sizePolicy1.setHeightForWidth(self.label_6.sizePolicy().hasHeightForWidth())
         self.label_6.setSizePolicy(sizePolicy1)
-        self.label_6.setFont(font2)
+        self.label_6.setFont(font11)
         self.label_6.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
         self.splitter_5.addWidget(self.label_6)
         self.txtMunicipio = QLineEdit(self.splitter_5)
         self.txtMunicipio.setObjectName(u"txtMunicipio")
         self.txtMunicipio.setMinimumSize(QSize(0, 35))
         self.txtMunicipio.setMaximumSize(QSize(16777215, 35))
-        self.txtMunicipio.setFont(font2)
+        self.txtMunicipio.setFont(font11)
         self.txtMunicipio.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtMunicipio.setMaxLength(30)
         self.txtMunicipio.setClearButtonEnabled(True)
@@ -1115,20 +1098,21 @@ class Ui_JanelaPrincipal(object):
         self.label_10.setObjectName(u"label_10")
         sizePolicy1.setHeightForWidth(self.label_10.sizePolicy().hasHeightForWidth())
         self.label_10.setSizePolicy(sizePolicy1)
-        self.label_10.setFont(font2)
+        self.label_10.setFont(font11)
         self.label_10.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
         self.splitter_8.addWidget(self.label_10)
         self.txtDias = QLineEdit(self.splitter_8)
         self.txtDias.setObjectName(u"txtDias")
         self.txtDias.setMinimumSize(QSize(0, 35))
         self.txtDias.setMaximumSize(QSize(16777215, 35))
-        self.txtDias.setFont(font2)
+        self.txtDias.setFont(font11)
         self.txtDias.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtDias.setMaxLength(25)
         self.txtDias.setEchoMode(QLineEdit.Normal)
@@ -1149,20 +1133,21 @@ class Ui_JanelaPrincipal(object):
         self.label_11.setObjectName(u"label_11")
         sizePolicy1.setHeightForWidth(self.label_11.sizePolicy().hasHeightForWidth())
         self.label_11.setSizePolicy(sizePolicy1)
-        self.label_11.setFont(font2)
+        self.label_11.setFont(font11)
         self.label_11.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
         self.splitter_9.addWidget(self.label_11)
         self.txtHora = QLineEdit(self.splitter_9)
         self.txtHora.setObjectName(u"txtHora")
         self.txtHora.setMinimumSize(QSize(0, 35))
         self.txtHora.setMaximumSize(QSize(16777215, 35))
-        self.txtHora.setFont(font2)
+        self.txtHora.setFont(font11)
         self.txtHora.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtHora.setMaxLength(10)
         self.txtHora.setEchoMode(QLineEdit.Normal)
@@ -1194,20 +1179,21 @@ class Ui_JanelaPrincipal(object):
         self.label_7.setObjectName(u"label_7")
         sizePolicy1.setHeightForWidth(self.label_7.sizePolicy().hasHeightForWidth())
         self.label_7.setSizePolicy(sizePolicy1)
-        self.label_7.setFont(font2)
+        self.label_7.setFont(font11)
         self.label_7.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
         self.splitter_3.addWidget(self.label_7)
         self.txtSenha = QLineEdit(self.splitter_3)
         self.txtSenha.setObjectName(u"txtSenha")
         self.txtSenha.setMinimumSize(QSize(0, 35))
         self.txtSenha.setMaximumSize(QSize(16777215, 35))
-        self.txtSenha.setFont(font2)
+        self.txtSenha.setFont(font11)
         self.txtSenha.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtSenha.setMaxLength(5)
         self.txtSenha.setEchoMode(QLineEdit.Password)
@@ -1225,20 +1211,21 @@ class Ui_JanelaPrincipal(object):
         self.label_8.setObjectName(u"label_8")
         sizePolicy1.setHeightForWidth(self.label_8.sizePolicy().hasHeightForWidth())
         self.label_8.setSizePolicy(sizePolicy1)
-        self.label_8.setFont(font2)
+        self.label_8.setFont(font11)
         self.label_8.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
         self.splitter_4.addWidget(self.label_8)
         self.txtConfirmarSenha = QLineEdit(self.splitter_4)
         self.txtConfirmarSenha.setObjectName(u"txtConfirmarSenha")
         self.txtConfirmarSenha.setMinimumSize(QSize(0, 35))
         self.txtConfirmarSenha.setMaximumSize(QSize(16777215, 35))
-        self.txtConfirmarSenha.setFont(font2)
+        self.txtConfirmarSenha.setFont(font11)
         self.txtConfirmarSenha.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtConfirmarSenha.setMaxLength(5)
         self.txtConfirmarSenha.setEchoMode(QLineEdit.Password)
@@ -1254,10 +1241,10 @@ class Ui_JanelaPrincipal(object):
         self.label_9.setObjectName(u"label_9")
         sizePolicy1.setHeightForWidth(self.label_9.sizePolicy().hasHeightForWidth())
         self.label_9.setSizePolicy(sizePolicy1)
-        self.label_9.setFont(font2)
+        self.label_9.setFont(font11)
         self.label_9.setStyleSheet(u"margin: 0px;\n"
 "padding: 0px;\n"
-"color: rgb(0, 0, 0);\n"
+"color: #E8EAED;\n"
 "border: transparent;")
 
         self.verticalLayout_4.addWidget(self.label_9)
@@ -1266,10 +1253,11 @@ class Ui_JanelaPrincipal(object):
         self.txtTipoAtividade.setObjectName(u"txtTipoAtividade")
         self.txtTipoAtividade.setMinimumSize(QSize(0, 35))
         self.txtTipoAtividade.setMaximumSize(QSize(16777215, 35))
-        self.txtTipoAtividade.setFont(font2)
+        self.txtTipoAtividade.setFont(font11)
         self.txtTipoAtividade.setStyleSheet(u"padding: 5px;\n"
-"color: rgb(0, 0, 0);\n"
-"border: 1px solid rgb(109, 109, 109);\n"
+"color: #E8EAED;\n"
+"background-color: #161B22;\n"
+"border: 1px solid #30363D;\n"
 "border-radius:5px;")
         self.txtTipoAtividade.setMaxLength(30)
         self.txtTipoAtividade.setClearButtonEnabled(True)
@@ -1286,17 +1274,18 @@ class Ui_JanelaPrincipal(object):
         self.btnConcluir.setObjectName(u"btnConcluir")
         self.btnConcluir.setMinimumSize(QSize(0, 35))
         self.btnConcluir.setMaximumSize(QSize(16777215, 35))
-        self.btnConcluir.setFont(font2)
+        self.btnConcluir.setFont(font9)
         self.btnConcluir.setCursor(QCursor(Qt.PointingHandCursor))
         self.btnConcluir.setStyleSheet(u"QPushButton{\n"
 "	padding: 10px;\n"
-"	background-color: rgb(24, 12, 59);\n"
-"	border: transparent;\n"
+"	background-color: #3F51B5;\n"
+"	border: 1px solid #30363D;\n"
 "	border-radius:15px;\n"
-"	color: rgb(255, 255, 255);\n"
-";}\n"
+"	color: #E8EAED;\n"
+"    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);\n"
+"}\n"
 "QPushButton:hover{\n"
-"	background-color: rgb(61, 76, 161);\n"
+"	background-color: #5C6BC0;\n"
 "}\n"
 "")
         self.splitter_2.addWidget(self.btnConcluir)
@@ -1304,17 +1293,18 @@ class Ui_JanelaPrincipal(object):
         self.btnCancelar.setObjectName(u"btnCancelar")
         self.btnCancelar.setMinimumSize(QSize(0, 35))
         self.btnCancelar.setMaximumSize(QSize(16777215, 35))
-        self.btnCancelar.setFont(font2)
+        self.btnCancelar.setFont(font9)
         self.btnCancelar.setCursor(QCursor(Qt.PointingHandCursor))
         self.btnCancelar.setStyleSheet(u"QPushButton{\n"
 "	padding: 10px;\n"
-"	background-color: rgb(24, 12, 59);\n"
-"	border: transparent;\n"
+"	background-color: #3F51B5;\n"
+"	border: 1px solid #30363D;\n"
 "	border-radius:15px;\n"
-"	color: rgb(255, 255, 255);\n"
-";}\n"
+"	color: #E8EAED;\n"
+"    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);\n"
+"}\n"
 "QPushButton:hover{\n"
-"	background-color: rgb(61, 76, 161);\n"
+"	background-color: #5C6BC0;\n"
 "}\n"
 "")
         self.splitter_2.addWidget(self.btnCancelar)
