@@ -2,7 +2,7 @@
 
 ## Descrição
 
-O AskServiços é um sistema de desktop projetado para conectar trabalhadores autônomos a clientes em potencial. A plataforma permite que os trabalhadores anunciem seus serviços, enquanto os clientes podem pesquisar e encontrar os profissionais de que precisam. O sistema armazena as informações dos usuários, separando-os em duas categorias: clientes e trabalhadores, para facilitar a busca e o gerenciamento.
+O AskServiços é um sistema de desktop com o propósito de conectar trabalhadores autônomos a clientes em potencial. A plataforma permite que os trabalhadores anunciem seus serviços, enquanto os clientes podem pesquisar e encontrar os profissionais de que precisam. O sistema armazena as informações dos usuários, separando-os em duas categorias: clientes e trabalhadores, para facilitar a busca.
 
 ## Tecnologias Utilizadas
 
