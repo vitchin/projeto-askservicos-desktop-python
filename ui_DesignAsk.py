@@ -1393,9 +1393,9 @@ class Ui_JanelaPrincipal(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:11pt;\">Entre em contato conosco, caso haja algum problema na execu\u00e7\u00e3"
                         "o das funcionalidades do programa, ou tenha alguma indica\u00e7\u00e3o/recomenda\u00e7\u00e3o de melhora para o nosso programa.</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:11pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:600;\">LinkedIn</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:600;\">Instagram</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:600;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:11pt;\">https://www.linkedin.com/in/victornunesdev/</span></p>\n", None))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:11pt;\">@victoroliver_rick</span></p>\n", None))
         self.label_18.setText(QCoreApplication.translate("JanelaPrincipal", u"O QUE DESEJA FAZER?", None))
         self.btnAnunciar.setText(QCoreApplication.translate("JanelaPrincipal", u"AN\u00daNCIAR SERVI\u00c7OS", None))
         self.btnSolicitar.setText(QCoreApplication.translate("JanelaPrincipal", u"SOLICITAR SERVI\u00c7OS", None))

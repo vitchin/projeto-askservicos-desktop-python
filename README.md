@@ -1,21 +1,33 @@
 # Projeto AskServiços vers. Desktop
-### Projeto desenvolvido por mim e pela minha equipe de Projeto Integrador no ETE Adv. José David Gil Rodrigues.
 
-- **Função:** Permitir a promoção de trabalhadores autônomos da região de Recife.
+## Descrição
 
-- **Tipos de usuários:** Após uma análise percebemos que temos dois usuários em potêncial.
+O AskServiços é um sistema de desktop projetado para conectar trabalhadores autônomos a clientes em potencial. A plataforma permite que os trabalhadores anunciem seus serviços, enquanto os clientes podem pesquisar e encontrar os profissionais de que precisam. O sistema armazena as informações dos usuários, separando-os em duas categorias: clientes e trabalhadores, para facilitar a busca e o gerenciamento.
 
+## Tecnologias Utilizadas
 
-- **Trabalhador:** Pessoa que quer promover/anúnciar seus serviços.
+O projeto foi construído com as seguintes tecnologias:
 
+-   **Python:** A linguagem de programação principal usada para a lógica do aplicativo.
+-   **PySide6:** Um conjunto de bindings Python para a estrutura de aplicativos Qt, usado para construir a interface do usuário.
+-   **Qt Designer:** Uma ferramenta para projetar e construir interfaces gráficas do usuário (GUIs) a partir de componentes Qt.
 
-- **Cliente:** Pessoa que irá procurar pelos serviços.
+## Screenshots da Aplicação
 
-No app você poderá se cadastrar e assim seus dados serão salvos, e compartilhados na tabela na página inicial, ao pesquisar por um determinado tópico na barra de pesquisa como: Nome, Tipo de serviço, etc. serão demonstrados os resultados encontrados em relação ao que você pesquisou. Há também as opções de ver os contatos e sobre o projeto. 
+### Página Inicial (Homepage)
+![Página Inicial](Imagens/homepage.png)
 
-### O que foi utilizado no projeto:
+### Página Sobre (About)
+![Página Sobre](Imagens/aboutpage.png)
 
-- **PySide2:** é uma extenção do Python que permite fazer a ligação com o QtDesigner.
+### Página de Contato (Contact)
+![Página de Contato](Imagens/contactpage.png)
 
+### Página de Seleção (Select)
+![Página de Seleção](Imagens/selectpage.png)
 
-- **QtDesigner:** Ferramenta de criação de interfaces com Python para desktop.
+### Página do Cliente (Client)
+![Página do Cliente](Imagens/clientpage.png)
+
+### Página do Trabalhador (Worker)
+![Página do Trabalhador](Imagens/workerpage.png)
