@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1000</width>
-    <height>689</height>
+    <width>801</width>
+    <height>663</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -16,11 +16,23 @@
     <verstretch>0</verstretch>
    </sizepolicy>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>663</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.569, y1:1, x2:0.563, y2:0, stop:0 rgba(107, 74, 223, 255), stop:0.994318 rgba(23, 0, 167, 255));</string>
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -41,20 +53,11 @@
     </property>
     <item>
      <widget class="QFrame" name="FrameAcimaDeTodos">
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>60</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>60</height>
-       </size>
-      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(42, 55, 223, 255), stop:0.994318 rgba(40, 0, 219, 171));</string>
+       <string notr="true">margin: 0px;
+padding: 0px;
+border: transparent;
+background-color: rgb(24, 12, 59);</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -63,20 +66,122 @@
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
        <property name="leftMargin">
-        <number>10</number>
+        <number>0</number>
        </property>
        <property name="topMargin">
         <number>0</number>
        </property>
        <property name="rightMargin">
-        <number>10</number>
+        <number>0</number>
        </property>
        <property name="bottomMargin">
         <number>0</number>
        </property>
        <item>
-        <widget class="QLabel" name="Titulo">
+        <widget class="QFrame" name="frame_12">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <property name="spacing">
+           <number>2</number>
+          </property>
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="Titulo">
+            <property name="font">
+             <font>
+              <family>Liberation Sans</family>
+              <pointsize>16</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(135, 163, 255);</string>
+            </property>
+            <property name="text">
+             <string>ASK</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::PlainText</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="Titulo_2">
+            <property name="font">
+             <font>
+              <family>Liberation Sans</family>
+              <pointsize>22</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(255, 255, 255);
+</string>
+            </property>
+            <property name="text">
+             <string>SERVIÇOS</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::PlainText</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>358</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnCasa">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>100</width>
@@ -91,58 +196,11 @@
          </property>
          <property name="font">
           <font>
-           <family>Agency FB</family>
-           <pointsize>30</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(130, 14, 255, 0), stop:0.994318 rgba(122, 0, 255, 0));
-
-color: rgb(255, 255, 255);
-</string>
-         </property>
-         <property name="text">
-          <string>ASK</string>
-         </property>
-         <property name="textFormat">
-          <enum>Qt::PlainText</enum>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btnCasa">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Agency FB</family>
-           <pointsize>15</pointsize>
-           <weight>75</weight>
+           <family>Leelawadee UI</family>
+           <pointsize>11</pointsize>
+           <weight>50</weight>
            <italic>false</italic>
-           <bold>true</bold>
-           <underline>false</underline>
-           <strikeout>false</strikeout>
+           <bold>false</bold>
           </font>
          </property>
          <property name="cursor">
@@ -150,14 +208,18 @@ color: rgb(255, 255, 255);
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton{
-background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(52, 109, 255, 255), stop:1 rgba(94, 62, 237, 255));
-color: rgb(255, 255, 255);
-border-radius:5px;
-;}
-QPushButton:hover{
-background-color: rgb(89, 161, 255);
+	padding: 5px;
+	border: none;
+	border-radius: 0px;
+	color: &quot;white&quot;;
+	letter-spacing:1px;
+	font-weight: 500;
+	background-color: transparent;
+	font: &quot;Leelawadee&quot;;
 }
-</string>
+QPushButton:hover{
+	background-color: rgb(61, 76, 161);
+}</string>
          </property>
          <property name="text">
           <string>HOME</string>
@@ -167,32 +229,30 @@ background-color: rgb(89, 161, 255);
        <item>
         <widget class="QPushButton" name="btnSobre">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
          <property name="minimumSize">
           <size>
-           <width>0</width>
-           <height>50</height>
+           <width>100</width>
+           <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>16777215</width>
-           <height>50</height>
+           <width>100</width>
+           <height>16777215</height>
           </size>
          </property>
          <property name="font">
           <font>
-           <family>Agency FB</family>
-           <pointsize>15</pointsize>
-           <weight>75</weight>
+           <family>Leelawadee UI</family>
+           <pointsize>11</pointsize>
+           <weight>50</weight>
            <italic>false</italic>
-           <bold>true</bold>
-           <underline>false</underline>
-           <strikeout>false</strikeout>
+           <bold>false</bold>
           </font>
          </property>
          <property name="cursor">
@@ -200,14 +260,18 @@ background-color: rgb(89, 161, 255);
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton{
-background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(52, 109, 255, 255), stop:1 rgba(94, 62, 237, 255));
-color: rgb(255, 255, 255);
-border-radius:5px;
-;}
-QPushButton:hover{
-background-color: rgb(89, 161, 255);
+	padding: 5px;
+	border: none;
+	border-radius: 0px;
+	color: &quot;white&quot;;
+	letter-spacing:1px;
+	font-weight: 500;
+	background-color: transparent;
+	font: &quot;Leelawadee&quot;;
 }
-</string>
+QPushButton:hover{
+	background-color: rgb(61, 76, 161);
+}</string>
          </property>
          <property name="text">
           <string>SOBRE</string>
@@ -217,32 +281,30 @@ background-color: rgb(89, 161, 255);
        <item>
         <widget class="QPushButton" name="btnContato">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
          <property name="minimumSize">
           <size>
-           <width>0</width>
-           <height>50</height>
+           <width>100</width>
+           <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>16777215</width>
-           <height>50</height>
+           <width>100</width>
+           <height>16777215</height>
           </size>
          </property>
          <property name="font">
           <font>
-           <family>Agency FB</family>
-           <pointsize>15</pointsize>
-           <weight>75</weight>
+           <family>Leelawadee UI</family>
+           <pointsize>11</pointsize>
+           <weight>50</weight>
            <italic>false</italic>
-           <bold>true</bold>
-           <underline>false</underline>
-           <strikeout>false</strikeout>
+           <bold>false</bold>
           </font>
          </property>
          <property name="cursor">
@@ -250,15 +312,18 @@ background-color: rgb(89, 161, 255);
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton{
-background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(52, 109, 255, 255), stop:1 rgba(94, 62, 237, 255));
-color: rgb(255, 255, 255);
-border-radius:5px;
+	padding: 5px;
+	border: none;
+	border-radius: 0px;
+	color: &quot;white&quot;;
+	letter-spacing:1px;
+	font-weight: 500;
+	background-color: transparent;
+	font: &quot;Leelawadee&quot;;
 }
-
 QPushButton:hover{
-background-color: rgb(89, 161, 255);
-}
-</string>
+	background-color: rgb(61, 76, 161);
+}</string>
          </property>
          <property name="text">
           <string>CONTATO</string>
@@ -287,16 +352,16 @@ background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, 
       <widget class="QWidget" name="pg_inicial">
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <property name="spacing">
-         <number>0</number>
+         <number>5</number>
         </property>
         <property name="leftMargin">
-         <number>5</number>
+         <number>10</number>
         </property>
         <property name="topMargin">
-         <number>0</number>
+         <number>5</number>
         </property>
         <property name="rightMargin">
-         <number>5</number>
+         <number>10</number>
         </property>
         <property name="bottomMargin">
          <number>5</number>
@@ -304,31 +369,20 @@ background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, 
         <item>
          <widget class="QFrame" name="FrameSearch">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>45</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>45</height>
-           </size>
           </property>
           <property name="layoutDirection">
            <enum>Qt::LeftToRight</enum>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: qlineargradient(spread:pad, x1:0.569, y1:1, x2:0.563, y2:0, stop:0 rgba(107, 74, 223, 68), stop:0.994318 rgba(23, 0, 167, 191));
-color: rgb(255, 255, 255);
-
-</string>
+           <string notr="true">margin: 0px;
+padding: 0px;
+border: transparent;
+border-radius: 20px;
+background-color: rgb(255, 255, 255);</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
@@ -338,40 +392,28 @@ color: rgb(255, 255, 255);
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_2">
            <property name="spacing">
-            <number>10</number>
+            <number>0</number>
            </property>
            <property name="leftMargin">
-            <number>10</number>
+            <number>0</number>
            </property>
            <property name="topMargin">
             <number>0</number>
            </property>
            <property name="rightMargin">
-            <number>10</number>
+            <number>0</number>
            </property>
            <property name="bottomMargin">
             <number>0</number>
            </property>
            <item>
             <widget class="QPushButton" name="btnPesquisar">
-             <property name="minimumSize">
-              <size>
-               <width>120</width>
-               <height>35</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>120</width>
-               <height>35</height>
-              </size>
-             </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
               </font>
              </property>
              <property name="cursor">
@@ -379,80 +421,71 @@ color: rgb(255, 255, 255);
              </property>
              <property name="styleSheet">
               <string notr="true">QPushButton{
-background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(52, 109, 255, 255), stop:1 rgba(94, 62, 237, 255));
-color: rgb(255, 255, 255);
-border-radius:5px;
+	padding: 10px;
+	background-color: rgb(24, 12, 59);
+	border: transparent;
+	border-top-right-radius:0px;
+	border-bottom-right-radius: 0px;	
+	color: rgb(255, 255, 255);
 ;}
 QPushButton:hover{
-background-color: rgb(89, 161, 255);
+	background-color: rgb(61, 76, 161);
 }
 </string>
              </property>
              <property name="text">
-              <string>PESQUISAR</string>
+              <string>Pesquisar</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QSplitter" name="splitter_7">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <widget class="QLineEdit" name="CampoPesquisa">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>35</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>35</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <family>Nirmala UI</family>
-                <pointsize>13</pointsize>
-                <weight>50</weight>
-                <bold>false</bold>
-               </font>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);
-border-radius:2px;</string>
-              </property>
-              <property name="maxLength">
-               <number>50</number>
-              </property>
-              <property name="placeholderText">
-               <string>Barra de Pesquisa</string>
-              </property>
-             </widget>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="btnCadastrar">
+            <widget class="QLineEdit" name="CampoPesquisa">
              <property name="minimumSize">
               <size>
-               <width>120</width>
-               <height>35</height>
+               <width>0</width>
+               <height>40</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
-               <width>120</width>
-               <height>35</height>
+               <width>16777215</width>
+               <height>40</height>
               </size>
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">margin: 0px;
+padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:0px;</string>
+             </property>
+             <property name="maxLength">
+              <number>50</number>
+             </property>
+             <property name="placeholderText">
+              <string>Pesquise por serviços</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnCadastrar">
+             <property name="font">
+              <font>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
               </font>
              </property>
              <property name="cursor">
@@ -463,18 +496,20 @@ border-radius:2px;</string>
              </property>
              <property name="styleSheet">
               <string notr="true">QPushButton{
-background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(52, 109, 255, 255), stop:1 rgba(94, 62, 237, 255));
-color: rgb(255, 255, 255);
-border-radius:5px;
+	padding: 10px;
+	background-color: rgb(24, 12, 59);
+	border: transparent;
+	border-top-left-radius:0px;
+	border-bottom-left-radius: 0px;
+	color: rgb(255, 255, 255);
 ;}
-
 QPushButton:hover{
-background-color: rgb(89, 161, 255);
+	background-color: rgb(61, 76, 161);
 }
 </string>
              </property>
              <property name="text">
-              <string>CADASTRE-SE</string>
+              <string>Cadastre-se</string>
              </property>
             </widget>
            </item>
@@ -484,7 +519,7 @@ background-color: rgb(89, 161, 255);
         <item>
          <widget class="QTableWidget" name="tb_usuarios">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
@@ -493,41 +528,99 @@ background-color: rgb(89, 161, 255);
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(228, 229, 235);</string>
+           <string notr="true">QHeaderView:section{
+	padding: 5px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	border: transparent;
+	border-right: 1px solid rgb(199, 199, 199);
+	border-bottom: 1px solid rgb(199, 199, 199);
+}
+QHeaderView:section:hover{
+	background-color: rgb(231, 231, 239);
+}
+
+QTableWidget{
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(199, 199, 199);
+}
+
+/*Mexendo no scrollbar*/
+
+QScrollBar:horizontal{
+	border: transparent;
+	border-radius: 0px;
+	background-color: rgb(231, 231, 239);
+	height: 13px;
+}
+
+QScrollBar::handle:horizontal{
+	background-color: rgb(24, 12, 59);
+	/*min-height: 10px;*/
+	border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal:hover{
+	background-color: rgb(61, 76, 161);
+}
+
+/*Mexendo na seta direita*/
+QScollBar::sub-line:horizontal{
+	border:transparent;
+	background-color: rgba(203, 204, 210, 150);
+	height: 15px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	subcontrol-position:top;
+	subcontrol-origin: margin;
+}
+QScollBar::sub-line:horizontal:hover {
+	background-color: rgb(61, 76, 161);
+}
+
+/*Mexendo na seta esquerda*/
+QScollBar::add-line:vertical {
+	border:none;
+    background-color: rgba(203, 204, 210, 150);		
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position:bottom;
+	subcontrol-origin: margin;
+}
+QScollBar::add-line:horizontal:hover {
+	background-color: rgb(61, 76, 161);
+}
+
+/*Mexendo nas setas direita e esquerda*/
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal{
+		background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));
+}
+
+
+
+</string>
           </property>
-          <attribute name="horizontalHeaderDefaultSectionSize">
-           <number>150</number>
-          </attribute>
           <attribute name="horizontalHeaderMinimumSectionSize">
            <number>100</number>
           </attribute>
-          <column>
-           <property name="text">
-            <string>ID</string>
-           </property>
-           <property name="font">
-            <font>
-             <family>Nirmala UI</family>
-             <pointsize>10</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-             <kerning>true</kerning>
-            </font>
-           </property>
-           <property name="textAlignment">
-            <set>AlignCenter</set>
-           </property>
-          </column>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>150</number>
+          </attribute>
           <column>
            <property name="text">
             <string>NOME</string>
            </property>
            <property name="font">
             <font>
-             <family>Nirmala UI</family>
+             <family>Leelawadee UI</family>
              <pointsize>10</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="textAlignment">
@@ -540,10 +633,10 @@ background-color: rgb(89, 161, 255);
            </property>
            <property name="font">
             <font>
-             <family>Nirmala UI</family>
+             <family>Leelawadee UI</family>
              <pointsize>10</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="textAlignment">
@@ -556,10 +649,10 @@ background-color: rgb(89, 161, 255);
            </property>
            <property name="font">
             <font>
-             <family>Nirmala UI</family>
+             <family>Leelawadee UI</family>
              <pointsize>10</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="textAlignment">
@@ -572,10 +665,10 @@ background-color: rgb(89, 161, 255);
            </property>
            <property name="font">
             <font>
-             <family>Nirmala UI</family>
+             <family>Leelawadee UI</family>
              <pointsize>10</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="textAlignment">
@@ -588,10 +681,10 @@ background-color: rgb(89, 161, 255);
            </property>
            <property name="font">
             <font>
-             <family>Nirmala UI</family>
+             <family>Leelawadee UI</family>
              <pointsize>10</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="textAlignment">
@@ -604,10 +697,10 @@ background-color: rgb(89, 161, 255);
            </property>
            <property name="font">
             <font>
-             <family>Nirmala UI</family>
+             <family>Leelawadee UI</family>
              <pointsize>10</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="textAlignment">
@@ -620,10 +713,10 @@ background-color: rgb(89, 161, 255);
            </property>
            <property name="font">
             <font>
-             <family>Nirmala UI</family>
+             <family>Leelawadee UI</family>
              <pointsize>10</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="textAlignment">
@@ -636,10 +729,10 @@ background-color: rgb(89, 161, 255);
            </property>
            <property name="font">
             <font>
-             <family>Nirmala UI</family>
+             <family>Leelawadee UI</family>
              <pointsize>10</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="textAlignment">
@@ -652,10 +745,10 @@ background-color: rgb(89, 161, 255);
            </property>
            <property name="font">
             <font>
-             <family>Nirmala UI</family>
+             <family>Leelawadee UI</family>
              <pointsize>10</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="textAlignment">
@@ -669,13 +762,13 @@ background-color: rgb(89, 161, 255);
       <widget class="QWidget" name="pg_sobre">
        <layout class="QHBoxLayout" name="horizontalLayout_8">
         <property name="spacing">
-         <number>5</number>
+         <number>0</number>
         </property>
         <property name="leftMargin">
          <number>0</number>
         </property>
         <property name="topMargin">
-         <number>5</number>
+         <number>0</number>
         </property>
         <property name="rightMargin">
          <number>0</number>
@@ -686,7 +779,7 @@ background-color: rgb(89, 161, 255);
         <item>
          <widget class="QFrame" name="frame_5">
           <property name="styleSheet">
-           <string notr="true">background-color: qlineargradient(spread:pad, x1:0.585955, y1:0, x2:0.591, y2:1, stop:0 rgba(67, 88, 246, 239), stop:1 rgba(26, 0, 187, 255));</string>
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
@@ -711,8 +804,8 @@ background-color: rgb(89, 161, 255);
             <widget class="QTextBrowser" name="ConteudoSobre">
              <property name="font">
               <font>
-               <family>Nirmala UI</family>
-               <pointsize>8</pointsize>
+               <family>Leelawadee UI</family>
+               <pointsize>10</pointsize>
                <weight>50</weight>
                <italic>false</italic>
                <bold>false</bold>
@@ -722,33 +815,36 @@ background-color: rgb(89, 161, 255);
               <cursorShape>UpArrowCursor</cursorShape>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));
-color: rgb(255, 255, 255);
-border-radius:2px;</string>
+              <string notr="true">background-color: rgb(255, 255, 255);
+padding: 10px;
+color: rgb(21, 21, 21);
+border: 1px solid rgb(199, 199, 199);
+border-radius:10px;
+font: &quot;Leelawadee UI&quot;;</string>
              </property>
              <property name="html">
               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Nirmala UI'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;SOBRE&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;O que é o AskServiços?&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;Uma plataforma que permite a promoção de serviços de trabalhadores autônomos de eletrônica.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;Caso você não saiba:&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;Trabalhadores autônomos são aqueles que trabalham por sua propria conta e risco, sem vínculo empregatício.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;Quais os nossos objetivos?&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;• Criar um aplicativo que possibilite o relacionamento entre os serviços locais com o cliente.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;• Possibilitar a divulgação do trabalho para os prestadores de serviços.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;• Facilitar o encontro dos clientes com os prestadores de serviços, utilizando meios de localização.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;• Estabelecer uma rede de serviços na localidade.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Leelawadee UI'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Nirmala UI'; font-size:14pt; font-weight:600;&quot;&gt;SOBRE&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Nirmala UI'; font-size:16pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:600;&quot;&gt;O que é o AskServiços?&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;Uma plataforma que permite a promoção de serviços de trabalhadores autônomos de eletrônica.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:600;&quot;&gt;Caso você não saiba:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;Trabalhadores autônomos são aqueles que trabalham por sua propria conta e risco, sem vínculo empregatício.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:600;&quot;&gt;Quais os nossos objetivos?&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;• Criar um aplicativo que possibilite o relacionamento entre os serviços locais com o cliente.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Nirmala UI'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;• Possibilitar a divulgação do trabalho para os prestadores de serviços.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Nirmala UI'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;• Facilitar o encontro dos clientes com os prestadores de serviços, utilizando meios de localização.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Nirmala UI'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;• Estabelecer uma rede de serviços na localidade.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
             </widget>
            </item>
@@ -760,13 +856,13 @@ p, li { white-space: pre-wrap; }
       <widget class="QWidget" name="pg_contato">
        <layout class="QHBoxLayout" name="horizontalLayout_7">
         <property name="spacing">
-         <number>5</number>
+         <number>0</number>
         </property>
         <property name="leftMargin">
          <number>0</number>
         </property>
         <property name="topMargin">
-         <number>5</number>
+         <number>0</number>
         </property>
         <property name="rightMargin">
          <number>0</number>
@@ -777,7 +873,7 @@ p, li { white-space: pre-wrap; }
         <item>
          <widget class="QFrame" name="frame_4">
           <property name="styleSheet">
-           <string notr="true">background-color: qlineargradient(spread:pad, x1:0.585955, y1:0, x2:0.591, y2:1, stop:0 rgba(67, 88, 246, 239), stop:1 rgba(26, 0, 187, 255));</string>
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
@@ -786,6 +882,9 @@ p, li { white-space: pre-wrap; }
            <enum>QFrame::Raised</enum>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_6">
+           <property name="spacing">
+            <number>0</number>
+           </property>
            <property name="leftMargin">
             <number>20</number>
            </property>
@@ -802,34 +901,39 @@ p, li { white-space: pre-wrap; }
             <widget class="QTextBrowser" name="ConteudoContato">
              <property name="font">
               <font>
-               <family>MS Shell Dlg 2</family>
+               <family>Liberation Sans</family>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="cursor" stdset="0">
               <cursorShape>UpArrowCursor</cursorShape>
              </property>
              <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);
-font:&quot;Nirmala UI&quot;;
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));
-border-radius:2px;</string>
+              <string notr="true">background-color: rgb(255, 255, 255);
+padding: 10px;
+color: rgb(21, 21, 21);
+border: 1px solid rgb(199, 199, 199);
+border-radius:10px;
+font: &quot;Leelawadee&quot;;</string>
              </property>
              <property name="html">
               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;CONTATO&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Entre em contato conosco, caso haja algum problema na execução das funcionalidades do programa, ou tenha alguma indicação/recomendação de melhora para o nosso programa.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Instagram&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;@victoroliver_rick&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;@mhelenaxz&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;@Vanessa.vitoria14&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Liberation Sans'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Nirmala UI'; font-size:14pt; font-weight:600;&quot;&gt;CONTATO&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;Entre em contato conosco, caso haja algum problema na execução das funcionalidades do programa, ou tenha alguma indicação/recomendação de melhora para o nosso programa.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:600;&quot;&gt;Instagram&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;@victoroliver_rick&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;@mhelenaxz&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:11pt;&quot;&gt;@Vanessa.vitoria14&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
             </widget>
            </item>
@@ -839,30 +943,49 @@ p, li { white-space: pre-wrap; }
        </layout>
       </widget>
       <widget class="QWidget" name="pg_escolha">
-       <layout class="QHBoxLayout" name="horizontalLayout_12">
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
         <item>
          <widget class="QFrame" name="frame_9">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="minimumSize">
            <size>
-            <width>350</width>
+            <width>300</width>
             <height>250</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>350</width>
+            <width>300</width>
             <height>250</height>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(96, 64, 239, 255), stop:1 rgba(36, 0, 198, 144));
-border-radius:20px;</string>
+           <string notr="true">background-color: rgb(255, 255, 255);
+padding: 10px;
+color: rgb(21, 21, 21);
+border: 1px solid rgb(199, 199, 199);
+border-radius:10px;
+font: &quot;Leelawadee&quot;;</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
@@ -871,34 +994,48 @@ border-radius:20px;</string>
            <enum>QFrame::Raised</enum>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_7">
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item>
             <widget class="QLabel" name="label_18">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>25</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>25</height>
-              </size>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>20</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;
+border-radius: 0px;
+border-bottom: 1px solid &quot;grey&quot;;</string>
              </property>
              <property name="text">
-              <string>ATIVIDADES</string>
+              <string>O QUE DESEJA FAZER?</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -921,10 +1058,11 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="cursor">
@@ -932,51 +1070,19 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              </property>
              <property name="styleSheet">
               <string notr="true">QPushButton{
-background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(52, 109, 255, 255), stop:1 rgba(94, 62, 237, 255));
-color: rgb(255, 255, 255);
-border-radius:15px;
+	padding: 10px;
+	background-color: rgb(24, 12, 59);
+	border: transparent;
+	border-radius:15px;
+	color: rgb(255, 255, 255);
 ;}
 QPushButton:hover{
-background-color: rgb(89, 161, 255);
+	background-color: rgb(61, 76, 161);
 }
 </string>
              </property>
              <property name="text">
               <string>ANÚNCIAR SERVIÇOS</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLabel" name="label_21">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>25</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>25</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
-             </property>
-             <property name="text">
-              <string>OU</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -996,10 +1102,11 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="cursor">
@@ -1007,51 +1114,19 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              </property>
              <property name="styleSheet">
               <string notr="true">QPushButton{
-background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(52, 109, 255, 255), stop:1 rgba(94, 62, 237, 255));
-color: rgb(255, 255, 255);
-border-radius:15px;
+	padding: 10px;
+	background-color: rgb(24, 12, 59);
+	border: transparent;
+	border-radius:15px;
+	color: rgb(255, 255, 255);
 ;}
 QPushButton:hover{
-background-color: rgb(89, 161, 255);
+	background-color: rgb(61, 76, 161);
 }
 </string>
              </property>
              <property name="text">
               <string>SOLICITAR SERVIÇOS</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLabel" name="label_22">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>25</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>25</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
-             </property>
-             <property name="text">
-              <string>OU</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -1071,10 +1146,11 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="cursor">
@@ -1082,12 +1158,14 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              </property>
              <property name="styleSheet">
               <string notr="true">QPushButton{
-background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(52, 109, 255, 255), stop:1 rgba(94, 62, 237, 255));
-color: rgb(255, 255, 255);
-border-radius:15px;
+	padding: 10px;
+	background-color: rgb(24, 12, 59);
+	border: transparent;
+	border-radius:15px;
+	color: rgb(255, 255, 255);
 ;}
 QPushButton:hover{
-background-color: rgb(89, 161, 255);
+	background-color: rgb(61, 76, 161);
 }
 </string>
              </property>
@@ -1102,9 +1180,12 @@ background-color: rgb(89, 161, 255);
        </layout>
       </widget>
       <widget class="QWidget" name="pg_cliente">
-       <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
         <property name="spacing">
-         <number>5</number>
+         <number>0</number>
         </property>
         <property name="leftMargin">
          <number>0</number>
@@ -1129,20 +1210,24 @@ background-color: rgb(89, 161, 255);
           <property name="minimumSize">
            <size>
             <width>350</width>
-            <height>415</height>
+            <height>385</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
             <width>350</width>
-            <height>415</height>
+            <height>385</height>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(96, 64, 239, 255), stop:1 rgba(36, 0, 198, 144));
-border-radius:20px;
-border-color: rgb(255, 255, 255);
-</string>
+           <string notr="true">margin: 0px;
+padding: 10px;
+border: transparent;
+background-color: rgb(255, 255, 255);
+color: rgb(21, 21, 21);
+border: 1px solid rgb(199, 199, 199);
+border-radius:10px;
+font: &quot;Leelawadee UI&quot;;</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
@@ -1150,32 +1235,47 @@ border-color: rgb(255, 255, 255);
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout_5">
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item>
             <widget class="QLabel" name="label_17">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>25</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>25</height>
-              </size>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>18</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Liberation Sans</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 5px;
+color: rgb(0, 0, 0);
+border: transparent;
+border-radius: 0px;
+border-bottom: 1px solid &quot;grey&quot;;
+</string>
              </property>
              <property name="text">
               <string>CAMPO DE CADASTRO</string>
@@ -1187,32 +1287,41 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
            </item>
            <item>
             <widget class="QLabel" name="label_12">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="minimumSize">
               <size>
                <width>0</width>
-               <height>25</height>
+               <height>30</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>25</height>
+               <height>30</height>
               </size>
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
              </property>
              <property name="text">
-              <string>NOME:</string>
+              <string>Nome completo:</string>
              </property>
             </widget>
            </item>
@@ -1221,24 +1330,29 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              <property name="minimumSize">
               <size>
                <width>0</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="font">
               <font>
-               <family>Nirmala UI</family>
-               <pointsize>12</pointsize>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(255, 255, 255);
-border-radius:2px;</string>
+              <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
              </property>
              <property name="inputMask">
               <string/>
@@ -1253,7 +1367,7 @@ border-radius:2px;</string>
               <bool>true</bool>
              </property>
              <property name="placeholderText">
-              <string>Digite seu Nome Completo</string>
+              <string>Digite seu nome</string>
              </property>
              <property name="clearButtonEnabled">
               <bool>true</bool>
@@ -1262,32 +1376,41 @@ border-radius:2px;</string>
            </item>
            <item>
             <widget class="QLabel" name="label_13">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="minimumSize">
               <size>
                <width>0</width>
-               <height>25</height>
+               <height>30</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>25</height>
+               <height>30</height>
               </size>
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
              </property>
              <property name="text">
-              <string>EMAIL:</string>
+              <string>Email:</string>
              </property>
             </widget>
            </item>
@@ -1296,29 +1419,35 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              <property name="minimumSize">
               <size>
                <width>0</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="font">
               <font>
-               <family>Nirmala UI</family>
-               <pointsize>12</pointsize>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(255, 255, 255);border-radius:2px;</string>
+              <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
              </property>
              <property name="maxLength">
               <number>50</number>
              </property>
              <property name="placeholderText">
-              <string>Digite sua Conta de Email</string>
+              <string>Ex: Conta@email.com</string>
              </property>
              <property name="clearButtonEnabled">
               <bool>true</bool>
@@ -1327,32 +1456,41 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
            </item>
            <item>
             <widget class="QLabel" name="label_14">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="minimumSize">
               <size>
                <width>0</width>
-               <height>25</height>
+               <height>30</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>25</height>
+               <height>30</height>
               </size>
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
              </property>
              <property name="text">
-              <string>NÚMERO DE TELEFONE:</string>
+              <string>Nº de telefone:</string>
              </property>
             </widget>
            </item>
@@ -1361,29 +1499,35 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              <property name="minimumSize">
               <size>
                <width>0</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="font">
               <font>
-               <family>Nirmala UI</family>
-               <pointsize>12</pointsize>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(255, 255, 255);border-radius:2px;</string>
+              <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
              </property>
              <property name="maxLength">
               <number>9</number>
              </property>
              <property name="placeholderText">
-              <string>(DDD) 9-2222-3333</string>
+              <string>(xx) x xxxx-xxxx</string>
              </property>
              <property name="clearButtonEnabled">
               <bool>true</bool>
@@ -1391,21 +1535,279 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
             </widget>
            </item>
            <item>
-            <widget class="QFrame" name="frame_10">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>70</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>80</height>
-              </size>
+            <widget class="QSplitter" name="splitter">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 0px;
+border: transparent;</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QFrame" name="frame_10">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">margin: 0px;
+padding: 0px;
+border: transparent;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_19">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
+                 </property>
+                 <property name="text">
+                  <string>Senha:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="txtSenhaCliente">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="maxLength">
+                  <number>5</number>
+                 </property>
+                 <property name="echoMode">
+                  <enum>QLineEdit::Password</enum>
+                 </property>
+                 <property name="placeholderText">
+                  <string>**********</string>
+                 </property>
+                 <property name="clearButtonEnabled">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QFrame" name="frame_11">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">margin: 0px;
+padding: 0px;
+border: transparent;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_20">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
+                 </property>
+                 <property name="text">
+                  <string>Confirmar Senha:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="txtConfirmarSenhaCliente">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="maxLength">
+                  <number>5</number>
+                 </property>
+                 <property name="echoMode">
+                  <enum>QLineEdit::Password</enum>
+                 </property>
+                 <property name="placeholderText">
+                  <string>**********</string>
+                 </property>
+                 <property name="clearButtonEnabled">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_8">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">margin: 0px;
+padding: 0px;
+border: transparent;</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -1413,7 +1815,10 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
              </property>
-             <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <property name="spacing">
+               <number>5</number>
+              </property>
               <property name="leftMargin">
                <number>0</number>
               </property>
@@ -1427,270 +1832,106 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
                <number>0</number>
               </property>
               <item>
-               <widget class="QSplitter" name="splitter_14">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
+               <widget class="QPushButton" name="btnConcluirCliente">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
                 </property>
-                <widget class="QLabel" name="label_19">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Agency FB</family>
-                   <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
-                 </property>
-                 <property name="text">
-                  <string>SENHA:</string>
-                 </property>
-                </widget>
-                <widget class="QLineEdit" name="txtSenhaCliente">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>30</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>30</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Nirmala UI</family>
-                   <pointsize>12</pointsize>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);border-radius:2px;</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="maxLength">
-                  <number>5</number>
-                 </property>
-                 <property name="echoMode">
-                  <enum>QLineEdit::Password</enum>
-                 </property>
-                 <property name="placeholderText">
-                  <string>*****</string>
-                 </property>
-                 <property name="clearButtonEnabled">
-                  <bool>true</bool>
-                 </property>
-                </widget>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>35</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>35</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Leelawadee UI</family>
+                  <pointsize>11</pointsize>
+                  <weight>50</weight>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	padding: 10px;
+	background-color: rgb(24, 12, 59);
+	border: transparent;
+	border-radius:15px;
+	color: rgb(255, 255, 255);
+;}
+QPushButton:hover{
+	background-color: rgb(61, 76, 161);
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>CONCLUIR</string>
+                </property>
                </widget>
               </item>
               <item>
-               <widget class="QSplitter" name="splitter_15">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
+               <widget class="QPushButton" name="btnCancelarCliente">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
                 </property>
-                <widget class="QLabel" name="label_20">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Agency FB</family>
-                   <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
-                 </property>
-                 <property name="text">
-                  <string>CONFIRMAR SENHA:</string>
-                 </property>
-                </widget>
-                <widget class="QLineEdit" name="txtConfirmarSenhaCliente">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>30</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>30</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Nirmala UI</family>
-                   <pointsize>12</pointsize>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);border-radius:2px;</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="maxLength">
-                  <number>5</number>
-                 </property>
-                 <property name="echoMode">
-                  <enum>QLineEdit::Password</enum>
-                 </property>
-                 <property name="placeholderText">
-                  <string>*****</string>
-                 </property>
-                 <property name="clearButtonEnabled">
-                  <bool>true</bool>
-                 </property>
-                </widget>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>35</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>35</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Leelawadee UI</family>
+                  <pointsize>11</pointsize>
+                  <weight>50</weight>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	padding: 10px;
+	background-color: rgb(24, 12, 59);
+	border: transparent;
+	border-radius:15px;
+	color: rgb(255, 255, 255);
+;}
+QPushButton:hover{
+	background-color: rgb(61, 76, 161);
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>CANCELAR</string>
+                </property>
                </widget>
               </item>
              </layout>
-            </widget>
-           </item>
-           <item>
-            <widget class="QTextBrowser" name="textBrowser_7">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>40</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>43</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-color: rgb(121, 111, 255);
-color: rgb(255, 255, 255);
-border-radius:20px;</string>
-             </property>
-             <property name="html">
-              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline;&quot;&gt;Apenas é possível avançar caso os espaços estejam preenchidos.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QSplitter" name="splitter_16">
-             <property name="styleSheet">
-              <string notr="true">background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <widget class="QPushButton" name="btnCancelarCliente">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>45</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>45</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <family>Agency FB</family>
-                <pointsize>15</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="cursor">
-               <cursorShape>PointingHandCursor</cursorShape>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton{
-background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(52, 109, 255, 255), stop:1 rgba(94, 62, 237, 255));
-color: rgb(255, 255, 255);
-border-radius:20px;
-;}
-QPushButton:hover{
-background-color: rgb(89, 161, 255);
-}
-</string>
-              </property>
-              <property name="text">
-               <string>CANCELAR</string>
-              </property>
-             </widget>
-             <widget class="QPushButton" name="btnConcluirCliente">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>45</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>45</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <family>Agency FB</family>
-                <pointsize>15</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="cursor">
-               <cursorShape>PointingHandCursor</cursorShape>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton{
-background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(52, 109, 255, 255), stop:1 rgba(94, 62, 237, 255));
-color: rgb(255, 255, 255);
-border-radius:20px;
-;}
-QPushButton:hover{
-background-color: rgb(89, 161, 255);
-}
-</string>
-              </property>
-              <property name="text">
-               <string>CONCLUIR</string>
-              </property>
-             </widget>
             </widget>
            </item>
           </layout>
@@ -1700,62 +1941,98 @@ background-color: rgb(89, 161, 255);
       </widget>
       <widget class="QWidget" name="pg_cadastro">
        <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
         <item>
          <widget class="QFrame" name="frame">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
           <property name="minimumSize">
            <size>
-            <width>360</width>
-            <height>600</height>
+            <width>400</width>
+            <height>0</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>390</width>
-            <height>600</height>
+            <width>400</width>
+            <height>16777215</height>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(96, 64, 239, 255), stop:1 rgba(36, 0, 198, 144));
-border-radius:20px;</string>
+           <string notr="true">margin: 0px;
+padding: 10px;
+border: transparent;
+background-color: rgb(255, 255, 255);
+color: rgb(21, 21, 21);
+border: 1px solid rgb(199, 199, 199);
+border-radius:10px;
+font: &quot;Leelawadee&quot;;</string>
           </property>
           <property name="frameShape">
-           <enum>QFrame::StyledPanel</enum>
+           <enum>QFrame::NoFrame</enum>
           </property>
           <property name="frameShadow">
-           <enum>QFrame::Raised</enum>
+           <enum>QFrame::Plain</enum>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item>
             <widget class="QLabel" name="label">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>25</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>25</height>
-              </size>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>18</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Liberation Sans</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 5px;
+color: rgb(0, 0, 0);
+border: transparent;
+border-radius: 0px;
+border-bottom: 1px solid &quot;grey&quot;;
+</string>
              </property>
              <property name="text">
               <string>CAMPO DE CADASTRO</string>
@@ -1767,32 +2044,29 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
            </item>
            <item>
             <widget class="QLabel" name="label_2">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>25</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>25</height>
-              </size>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
              </property>
              <property name="text">
-              <string>NOME:</string>
+              <string>Nome completo:</string>
              </property>
             </widget>
            </item>
@@ -1801,24 +2075,29 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              <property name="minimumSize">
               <size>
                <width>0</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="font">
               <font>
-               <family>Nirmala UI</family>
-               <pointsize>13</pointsize>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(255, 255, 255);
-border-radius:2px;</string>
+              <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
              </property>
              <property name="maxLength">
               <number>50</number>
@@ -1833,32 +2112,29 @@ border-radius:2px;</string>
            </item>
            <item>
             <widget class="QLabel" name="label_3">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>25</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>25</height>
-              </size>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
              </property>
              <property name="text">
-              <string>EMAIL:</string>
+              <string>Email:</string>
              </property>
             </widget>
            </item>
@@ -1867,23 +2143,29 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              <property name="minimumSize">
               <size>
                <width>0</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="font">
               <font>
-               <family>Nirmala UI</family>
-               <pointsize>13</pointsize>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(255, 255, 255);border-radius:2px;</string>
+              <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
              </property>
              <property name="maxLength">
               <number>50</number>
@@ -1898,32 +2180,29 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
            </item>
            <item>
             <widget class="QLabel" name="label_4">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>25</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>25</height>
-              </size>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
              </property>
              <property name="text">
-              <string>NÚMERO DE TELEFONE:</string>
+              <string>Nº de telefone:</string>
              </property>
             </widget>
            </item>
@@ -1932,29 +2211,35 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              <property name="minimumSize">
               <size>
                <width>0</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="font">
               <font>
-               <family>Nirmala UI</family>
-               <pointsize>13</pointsize>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(255, 255, 255);border-radius:2px;</string>
+              <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
              </property>
              <property name="maxLength">
               <number>9</number>
              </property>
              <property name="placeholderText">
-              <string>(DDD)9-3333-2222</string>
+              <string>(xx) x xxxx-xxxx</string>
              </property>
              <property name="clearButtonEnabled">
               <bool>true</bool>
@@ -1963,6 +2248,12 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
            </item>
            <item>
             <widget class="QFrame" name="frame_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -1976,7 +2267,9 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 0px;
+border: transparent;</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -1985,6 +2278,9 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
               <enum>QFrame::Raised</enum>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <property name="spacing">
+               <number>5</number>
+              </property>
               <property name="leftMargin">
                <number>0</number>
               </property>
@@ -1999,59 +2295,68 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
               </property>
               <item>
                <widget class="QSplitter" name="splitter_6">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
                 <property name="orientation">
                  <enum>Qt::Vertical</enum>
                 </property>
                 <widget class="QLabel" name="label_5">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>25</height>
-                  </size>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Agency FB</family>
-                   <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+                  <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
                  </property>
                  <property name="text">
-                  <string>RUA:</string>
+                  <string>Rua:</string>
                  </property>
                 </widget>
                 <widget class="QLineEdit" name="txtRua">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
-                   <height>30</height>
+                   <height>35</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
-                   <height>30</height>
+                   <height>35</height>
                   </size>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Nirmala UI</family>
-                   <pointsize>13</pointsize>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);border-radius:2px;</string>
+                  <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
                  </property>
                  <property name="maxLength">
                   <number>30</number>
@@ -2067,6 +2372,12 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
               </item>
               <item>
                <widget class="QSplitter" name="splitter_5">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
@@ -2077,55 +2388,58 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
                  <enum>Qt::Vertical</enum>
                 </property>
                 <widget class="QLabel" name="label_6">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>25</height>
-                  </size>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Agency FB</family>
-                   <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+                  <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
                  </property>
                  <property name="text">
-                  <string>MUNICÍPIO:</string>
+                  <string>Município:</string>
                  </property>
                 </widget>
                 <widget class="QLineEdit" name="txtMunicipio">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
-                   <height>30</height>
+                   <height>35</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
-                   <height>30</height>
+                   <height>35</height>
                   </size>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Nirmala UI</family>
-                   <pointsize>13</pointsize>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);border-radius:2px;</string>
+                  <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
                  </property>
                  <property name="maxLength">
                   <number>30</number>
@@ -2144,20 +2458,10 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
            </item>
            <item>
             <widget class="QFrame" name="frame_6">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>70</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>80</height>
-              </size>
-             </property>
              <property name="styleSheet">
-              <string notr="true">background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 0px;
+border: transparent;</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -2166,6 +2470,9 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
               <enum>QFrame::Raised</enum>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <property name="spacing">
+               <number>5</number>
+              </property>
               <property name="leftMargin">
                <number>0</number>
               </property>
@@ -2180,59 +2487,73 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
               </property>
               <item>
                <widget class="QSplitter" name="splitter_8">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">margin: 0px;
+padding: 0px;
+border: transparent;</string>
+                </property>
                 <property name="orientation">
                  <enum>Qt::Vertical</enum>
                 </property>
                 <widget class="QLabel" name="label_10">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>25</height>
-                  </size>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Agency FB</family>
-                   <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+                  <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
                  </property>
                  <property name="text">
-                  <string>DIAS DISPONÍVEIS:</string>
+                  <string>Dias disponíveis:</string>
                  </property>
                 </widget>
                 <widget class="QLineEdit" name="txtDias">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
-                   <height>30</height>
+                   <height>35</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
-                   <height>30</height>
+                   <height>35</height>
                   </size>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Nirmala UI</family>
-                   <pointsize>13</pointsize>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);border-radius:2px;</string>
+                  <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -2254,59 +2575,73 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
               </item>
               <item>
                <widget class="QSplitter" name="splitter_9">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">margin: 0px;
+padding: 0px;
+border: transparent;</string>
+                </property>
                 <property name="orientation">
                  <enum>Qt::Vertical</enum>
                 </property>
                 <widget class="QLabel" name="label_11">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>25</height>
-                  </size>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Agency FB</family>
-                   <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+                  <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
                  </property>
                  <property name="text">
-                  <string>HORÁRIO DISPONÍVEL:</string>
+                  <string>Horário disponível:</string>
                  </property>
                 </widget>
                 <widget class="QLineEdit" name="txtHora">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
-                   <height>30</height>
+                   <height>35</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
-                   <height>30</height>
+                   <height>35</height>
                   </size>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Nirmala UI</family>
-                   <pointsize>13</pointsize>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);border-radius:2px;</string>
+                  <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -2331,20 +2666,10 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
            </item>
            <item>
             <widget class="QFrame" name="frame_2">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>70</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>80</height>
-              </size>
-             </property>
              <property name="styleSheet">
-              <string notr="true">background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 0px;
+border: transparent;</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -2353,6 +2678,9 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
               <enum>QFrame::Raised</enum>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <property name="spacing">
+               <number>5</number>
+              </property>
               <property name="leftMargin">
                <number>0</number>
               </property>
@@ -2367,59 +2695,68 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
               </property>
               <item>
                <widget class="QSplitter" name="splitter_3">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
                 <property name="orientation">
                  <enum>Qt::Vertical</enum>
                 </property>
                 <widget class="QLabel" name="label_7">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>25</height>
-                  </size>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Agency FB</family>
-                   <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+                  <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
                  </property>
                  <property name="text">
-                  <string>SENHA:</string>
+                  <string>Senha:</string>
                  </property>
                 </widget>
                 <widget class="QLineEdit" name="txtSenha">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
-                   <height>30</height>
+                   <height>35</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
-                   <height>30</height>
+                   <height>35</height>
                   </size>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Nirmala UI</family>
-                   <pointsize>13</pointsize>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);border-radius:2px;</string>
+                  <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -2431,7 +2768,7 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
                   <enum>QLineEdit::Password</enum>
                  </property>
                  <property name="placeholderText">
-                  <string>*****</string>
+                  <string>**********</string>
                  </property>
                  <property name="clearButtonEnabled">
                   <bool>true</bool>
@@ -2441,59 +2778,68 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
               </item>
               <item>
                <widget class="QSplitter" name="splitter_4">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
                 <property name="orientation">
                  <enum>Qt::Vertical</enum>
                 </property>
                 <widget class="QLabel" name="label_8">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>25</height>
-                  </size>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Agency FB</family>
-                   <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+                  <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
                  </property>
                  <property name="text">
-                  <string>CONFIRMAR SENHA:</string>
+                  <string>Confirmar senha:</string>
                  </property>
                 </widget>
                 <widget class="QLineEdit" name="txtConfirmarSenha">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
-                   <height>30</height>
+                   <height>35</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
-                   <height>30</height>
+                   <height>35</height>
                   </size>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Nirmala UI</family>
-                   <pointsize>13</pointsize>
+                   <family>Leelawadee UI</family>
+                   <pointsize>11</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(255, 255, 255);border-radius:2px;</string>
+                  <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -2505,7 +2851,7 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
                   <enum>QLineEdit::Password</enum>
                  </property>
                  <property name="placeholderText">
-                  <string>*****</string>
+                  <string>**********</string>
                  </property>
                  <property name="clearButtonEnabled">
                   <bool>true</bool>
@@ -2518,32 +2864,29 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
            </item>
            <item>
             <widget class="QLabel" name="label_9">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>25</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>25</height>
-              </size>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
              </property>
              <property name="font">
               <font>
-               <family>Agency FB</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 0px;
+color: rgb(0, 0, 0);
+border: transparent;</string>
              </property>
              <property name="text">
-              <string>TIPO DE SERVIÇO:</string>
+              <string>Tipo de serviço:</string>
              </property>
             </widget>
            </item>
@@ -2552,23 +2895,29 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
              <property name="minimumSize">
               <size>
                <width>0</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>30</height>
+               <height>35</height>
               </size>
              </property>
              <property name="font">
               <font>
-               <family>Nirmala UI</family>
-               <pointsize>13</pointsize>
+               <family>Leelawadee UI</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(255, 255, 255);border-radius:2px;</string>
+              <string notr="true">padding: 5px;
+color: rgb(0, 0, 0);
+border: 1px solid rgb(109, 109, 109);
+border-radius:5px;</string>
              </property>
              <property name="maxLength">
               <number>30</number>
@@ -2582,99 +2931,35 @@ background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, st
             </widget>
            </item>
            <item>
-            <widget class="QTextBrowser" name="textBrowser_6">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>40</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>43</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-color: rgb(121, 111, 255);
-color: rgb(255, 255, 255);
-border-radius:20px;</string>
-             </property>
-             <property name="html">
-              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline;&quot;&gt;Apenas é possível avançar caso os espaços estejam preenchidos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-             </property>
-            </widget>
-           </item>
-           <item>
             <widget class="QSplitter" name="splitter_2">
              <property name="styleSheet">
-              <string notr="true">background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));</string>
+              <string notr="true">margin: 0px;
+padding: 0px;
+border: transparent;</string>
              </property>
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
-             <widget class="QPushButton" name="btnCancelar">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>45</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>45</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <family>Agency FB</family>
-                <pointsize>15</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="cursor">
-               <cursorShape>PointingHandCursor</cursorShape>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton{
-background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(52, 109, 255, 255), stop:1 rgba(94, 62, 237, 255));
-color: rgb(255, 255, 255);
-border-radius:20px;
-;}
-QPushButton:hover{
-background-color: rgb(89, 161, 255);
-}
-</string>
-              </property>
-              <property name="text">
-               <string>CANCELAR</string>
-              </property>
-             </widget>
              <widget class="QPushButton" name="btnConcluir">
               <property name="minimumSize">
                <size>
                 <width>0</width>
-                <height>45</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>16777215</width>
-                <height>45</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
                <font>
-                <family>Agency FB</family>
-                <pointsize>15</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
+                <family>Leelawadee UI</family>
+                <pointsize>11</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
                </font>
               </property>
               <property name="cursor">
@@ -2682,17 +2967,61 @@ background-color: rgb(89, 161, 255);
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton{
-background-color: qlineargradient(spread:pad, x1:0.512, y1:0, x2:0.5, y2:0.994, stop:0 rgba(52, 109, 255, 255), stop:1 rgba(94, 62, 237, 255));
-color: rgb(255, 255, 255);
-border-radius:20px;
+	padding: 10px;
+	background-color: rgb(24, 12, 59);
+	border: transparent;
+	border-radius:15px;
+	color: rgb(255, 255, 255);
 ;}
 QPushButton:hover{
-background-color: rgb(89, 161, 255);
+	background-color: rgb(61, 76, 161);
 }
 </string>
               </property>
               <property name="text">
                <string>CONCLUIR</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="btnCancelar">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>35</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>35</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Leelawadee UI</family>
+                <pointsize>11</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	padding: 10px;
+	background-color: rgb(24, 12, 59);
+	border: transparent;
+	border-radius:15px;
+	color: rgb(255, 255, 255);
+;}
+QPushButton:hover{
+	background-color: rgb(61, 76, 161);
+}
+</string>
+              </property>
+              <property name="text">
+               <string>CANCELAR</string>
               </property>
              </widget>
             </widget>
