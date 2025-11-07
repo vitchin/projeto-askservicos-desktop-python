@@ -11,6 +11,8 @@ O projeto foi construído com as seguintes tecnologias:
 -   **Python:** A linguagem de programação principal usada para a lógica do aplicativo.
 -   **PySide6:** Um conjunto de bindings Python para a estrutura de aplicativos Qt, usado para construir a interface do usuário.
 -   **Qt Designer:** Uma ferramenta para projetar e construir interfaces gráficas do usuário (GUIs) a partir de componentes Qt.
+-   **sqlite3:** Biblioteca nativa do Python que permite criar e gerenciar bancos de dados SQLite de forma simples e integrada.
+
 
 ## Screenshots da Aplicação
 
