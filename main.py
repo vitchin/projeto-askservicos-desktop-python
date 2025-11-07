@@ -1,47 +1,72 @@
-from PyQt5.QtWidgets import (QTableWidgetItem, QMessageBox)
-from PyQt5.QtWidgets import *
-from PySide6.QtGui import QIcon
-from PySide6.QtWidgets import (QTableWidgetItem, QMessageBox)
-from PySide6.QtWidgets import *
-from ui_DesignAsk import Ui_JanelaPrincipal
-from Database import DataBase
-from DatabaseCliente import DataBaseCliente
 import sys
+from PySide6.QtGui import QIcon
+from PySide6.QtWidgets import (
+    QApplication,
+    QMainWindow,
+    QTableWidgetItem,
+    QMessageBox,
+)
+from ui_DesignAsk import Ui_JanelaPrincipal
+from DatabaseManager import DatabaseManager
 
 class JanelaPrincipal(QMainWindow, Ui_JanelaPrincipal):
     def __init__(self):
         super(JanelaPrincipal, self).__init__()
         self.setupUi(self)
         self.setWindowTitle("Sistema de Pesquisa de Serviços")
-        appIcon = QIcon('Imagens/Logo.png')
+        appIcon = QIcon("Imagens/Logo.png")
         self.setWindowIcon(appIcon)
 
-        # Função dos botões de levar para outras páginas
-        # Página inicial
-        self.btnCasa.clicked.connect(lambda: self.Paginas.setCurrentWidget(self.pg_inicial))
-        self.btnSobre.clicked.connect(lambda: self.Paginas.setCurrentWidget(self.pg_sobre))
-        self.btnContato.clicked.connect(lambda: self.Paginas.setCurrentWidget(self.pg_contato))
+        self.setup_database()
+        self.setup_connections()
+        self.carregar_dados_usuario()
 
-        # pg_escolha
-        self.btnAnunciar.clicked.connect(lambda: self.Paginas.setCurrentWidget(self.pg_cadastro))
-        self.btnSolicitar.clicked.connect(lambda : self.Paginas.setCurrentWidget(self.pg_cliente))
-        self.btnVoltarInicio.clicked.connect(lambda: self.Paginas.setCurrentWidget(self.pg_inicial))
+    def setup_database(self):
+        with DatabaseManager("usuarios.db") as db:
+            db.create_user_table()
+        with DatabaseManager("clientes.db") as db:
+            db.create_client_table()
 
-        self.btnCancelarCliente.clicked.connect(lambda : self.Paginas.setCurrentWidget(self.pg_inicial))
-
-        # pg_cadastro
-        self.btnCadastrar.clicked.connect(lambda: self.Paginas.setCurrentWidget(self.pg_escolha))
-        self.btnCancelar.clicked.connect(lambda: self.Paginas.setCurrentWidget(self.pg_inicial))
+    def setup_connections(self):
+        self.btnCasa.clicked.connect(
+            lambda: self.Paginas.setCurrentWidget(self.pg_inicial)
+        )
+        self.btnSobre.clicked.connect(
+            lambda: self.Paginas.setCurrentWidget(self.pg_sobre)
+        )
+        self.btnContato.clicked.connect(
+            lambda: self.Paginas.setCurrentWidget(self.pg_contato)
+        )
+        self.btnAnunciar.clicked.connect(
+            lambda: self.Paginas.setCurrentWidget(self.pg_cadastro)
+        )
+        self.btnSolicitar.clicked.connect(
+            lambda: self.Paginas.setCurrentWidget(self.pg_cliente)
+        )
+        self.btnVoltarInicio.clicked.connect(
+            lambda: self.Paginas.setCurrentWidget(self.pg_inicial)
+        )
+        self.btnCancelarCliente.clicked.connect(
+            lambda: self.Paginas.setCurrentWidget(self.pg_inicial)
+        )
+        self.btnCadastrar.clicked.connect(
+            lambda: self.Paginas.setCurrentWidget(self.pg_escolha)
+        )
+        self.btnCancelar.clicked.connect(
+            lambda: self.Paginas.setCurrentWidget(self.pg_inicial)
+        )
         self.btnConcluir.clicked.connect(self.cadastrar_usuario)
         self.btnPesquisar.clicked.connect(self.pesquisar_dados)
         self.btnConcluirCliente.clicked.connect(self.cadastrar_cliente)
 
-        self.carregar_dados_usuario()
+    def show_message(self, title, text, icon=QMessageBox.Information):
+        msg = QMessageBox()
+        msg.setWindowTitle(title)
+        msg.setText(text)
+        msg.setIcon(icon)
+        msg.exec_()
 
-    # adiciona as informações do usuário no banco de dados usuarios.db
     def cadastrar_usuario(self):
-        db = DataBase("usuarios.db")
-
         nome = self.txtNome.text()
         email = self.txtEmail.text()
         telefone = self.txtTelefone.text()
@@ -53,91 +78,115 @@ class JanelaPrincipal(QMainWindow, Ui_JanelaPrincipal):
         tipo = self.txtTipoAtividade.text()
 
         if self.txtSenha.text() != self.txtConfirmarSenha.text():
-            msg = QMessageBox()
-            msg.setIcon(QMessageBox.Warning)
-            msg.setWindowTitle("Senhas Divergentes")
-            msg.setText("As senhas não são iguais!")
-            msg.exec_()
+            self.show_message(
+                "Senhas Divergentes", "As senhas não são iguais!", QMessageBox.Warning
+            )
+            return
 
-        if nome == "" or email == "" or telefone == "" or rua == "" or municipio == "" or hora == "" or dias == "" or senha == "" or tipo == "":
-            msg = QMessageBox()
-            msg.setIcon(QMessageBox.Warning)
-            msg.setWindowTitle("Campo vazio")
-            msg.setText("Você esqueceu de preencher algumas informações!")
-            msg.exec_()
-        else:
-            db.inserir_apaga_atualiza("INSERT INTO USUARIO(NOME, EMAIL, TELEFONE, RUA, MUNICIPIO, HORA, DIAS, SENHA, TIPO) VALUES('{}','{}','{}','{}','{}','{}','{}','{}','{}')".format(nome, email, telefone, rua, municipio, hora, dias, senha, tipo))
-            msg = QMessageBox()
-            msg.setIcon(QMessageBox.Information)
-            msg.setWindowTitle("Cadastro realizado")
-            msg.setText("Seu cadastro foi realizado com sucesso!")
-            msg.exec_()
-    # Coloca os dados na tabela
+        if not all(
+            [nome, email, telefone, rua, municipio, hora, dias, senha, tipo]
+        ):
+            self.show_message(
+                "Campo vazio",
+                "Você esqueceu de preencher algumas informações!",
+                QMessageBox.Warning,
+            )
+            return
+
+        query = """
+            INSERT INTO USUARIO(NOME, EMAIL, TELEFONE, RUA, MUNICIPIO, HORA, DIAS, SENHA, TIPO)
+            VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """
+        params = (nome, email, telefone, rua, municipio, hora, dias, senha, tipo)
+
+        with DatabaseManager("usuarios.db") as db:
+            if db.execute_query(query, params):
+                self.show_message(
+                    "Cadastro realizado", "Seu cadastro foi realizado com sucesso!"
+                )
+                self.carregar_dados_usuario()
+            else:
+                self.show_message(
+                    "Erro", "Não foi possível realizar o cadastro.", QMessageBox.Critical
+                )
+
     def carregar_dados_usuario(self):
-
-        db = DataBase("usuarios.db")
-        lista = db.pegar_dados("SELECT * FROM USUARIO")
+        with DatabaseManager("usuarios.db") as db:
+            lista = db.fetch_all("SELECT * FROM USUARIO")
 
         self.tb_usuarios.setRowCount(0)
         self.tb_usuarios.setSortingEnabled(True)
-        for linha, dados in enumerate(lista):
-            self.tb_usuarios.insertRow(linha)
-            self.tb_usuarios.resizeColumnToContents(linha)
+        for row_number, row_data in enumerate(lista):
+            self.tb_usuarios.insertRow(row_number)
+            for column_number, data in enumerate(row_data):
+                self.tb_usuarios.setItem(
+                    row_number, column_number, QTableWidgetItem(str(data))
+                )
 
-            for coluna, dados in enumerate(dados):
-                self.tb_usuarios.setItem(linha, coluna, QTableWidgetItem(str(dados)))
-                self.tb_usuarios.resizeColumnToContents(linha)
-    # Permite a pesquisa de dados atraves da barra de pesquisa
     def pesquisar_dados(self):
-
-        db = DataBase("usuarios.db")
-        valor_consulta = ""
         valor_consulta = self.CampoPesquisa.text()
+        query = """
+            SELECT * FROM USUARIO
+            WHERE NOME LIKE ? OR RUA LIKE ? OR MUNICIPIO LIKE ? OR TIPO LIKE ?
+        """
+        params = (
+            f"%{valor_consulta}%",
+            f"%{valor_consulta}%",
+            f"%{valor_consulta}%",
+            f"%{valor_consulta}%",
+        )
 
-        lista = db.pegar_dados(f"SELECT * FROM USUARIO WHERE NOME LIKE '%{valor_consulta}%' OR RUA LIKE '%{valor_consulta}%' OR MUNICIPIO LIKE '%{valor_consulta}%' OR TIPO LIKE '%{valor_consulta}%'")
-        lista = list(lista)
+        with DatabaseManager("usuarios.db") as db:
+            lista = db.fetch_all(query, params)
+
         if not lista:
-            return QMessageBox.Warning(QMessageBox(), f"Att: Usuário não encontrado!")
+            self.show_message("Atenção", "Usuário não encontrado!", QMessageBox.Warning)
         else:
             self.tb_usuarios.setRowCount(0)
-            for idxlinha, linha in enumerate(lista):
-                self.tb_usuarios.insertRow(idxlinha)
-                for idxcoluna, coluna in enumerate(linha):
-                    self.tb_usuarios.setItem(idxlinha, idxcoluna, QTableWidgetItem(str(coluna)))
-    # adiciona as informações do usuário no banco de dados clientes.db
-    def cadastrar_cliente(self):
-        dbc = DataBaseCliente("clientes.db")
+            for row_number, row_data in enumerate(lista):
+                self.tb_usuarios.insertRow(row_number)
+                for column_number, data in enumerate(row_data):
+                    self.tb_usuarios.setItem(
+                        row_number, column_number, QTableWidgetItem(str(data))
+                    )
 
+    def cadastrar_cliente(self):
         nome = self.txtNomeCliente.text()
         email = self.txtEmailCliente.text()
         telefone = self.txtTelefoneCliente.text()
         senha = self.txtSenhaCliente.text()
 
         if self.txtSenhaCliente.text() != self.txtConfirmarSenhaCliente.text():
-            msg = QMessageBox()
-            msg.setIcon(QMessageBox.Warning)
-            msg.setWindowTitle("Senhas Divergentes")
-            msg.setText("As senhas não são iguais!")
-            msg.exec_()
+            self.show_message(
+                "Senhas Divergentes", "As senhas não são iguais!", QMessageBox.Warning
+            )
+            return
 
-        if nome == "" or email == "" or telefone == "" or senha == "":
-            msg = QMessageBox()
-            msg.setIcon(QMessageBox.Warning)
-            msg.setWindowTitle("Campo vazio")
-            msg.setText("Você esqueceu de preencher algumas informações!")
-            msg.exec_()
-        else:
-            dbc.inserir_apaga_atualiza("INSERT INTO CLIENTE(NOME, EMAIL, TELEFONE, SENHA) VALUES('{}','{}','{}','{}')".format(nome, email, telefone, senha))
-            msg = QMessageBox()
-            msg.setIcon(QMessageBox.Information)
-            msg.setWindowTitle("Cadastro realizado")
-            msg.setText("Seu cadastro foi realizado com sucesso!")
-            msg.exec_()
+        if not all([nome, email, telefone, senha]):
+            self.show_message(
+                "Campo vazio",
+                "Você esqueceu de preencher algumas informações!",
+                QMessageBox.Warning,
+            )
+            return
+
+        query = "INSERT INTO CLIENTE(NOME, EMAIL, TELEFONE, SENHA) VALUES(?, ?, ?, ?)"
+        params = (nome, email, telefone, senha)
+
+        with DatabaseManager("clientes.db") as db:
+            if db.execute_query(query, params):
+                self.show_message(
+                    "Cadastro realizado", "Seu cadastro foi realizado com sucesso!"
+                )
+            else:
+                self.show_message(
+                    "Erro", "Não foi possível realizar o cadastro.", QMessageBox.Critical
+                )
 
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = JanelaPrincipal()
     window.show()
-    app.exec_()
+    sys.exit(app.exec_())
 

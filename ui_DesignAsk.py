@@ -47,7 +47,7 @@ class Ui_JanelaPrincipal(object):
         font.setFamily(u"Agency FB")
         font.setPointSize(30)
         font.setBold(True)
-        font.setWeight(75)
+        font.setWeight(QFont.Bold)
         self.Titulo.setFont(font)
         self.Titulo.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(130, 14, 255, 0), stop:0.994318 rgba(122, 0, 255, 0));\n"
 "\n"
@@ -73,7 +73,7 @@ class Ui_JanelaPrincipal(object):
         font1.setBold(True)
         font1.setItalic(False)
         font1.setUnderline(False)
-        font1.setWeight(75)
+        font1.setWeight(QFont.Bold)
         font1.setStrikeOut(False)
         self.btnCasa.setFont(font1)
         self.btnCasa.setCursor(QCursor(Qt.PointingHandCursor))
@@ -173,7 +173,7 @@ class Ui_JanelaPrincipal(object):
         font2.setFamily(u"Agency FB")
         font2.setPointSize(15)
         font2.setBold(True)
-        font2.setWeight(75)
+        font2.setWeight(QFont.Bold)
         self.btnPesquisar.setFont(font2)
         self.btnPesquisar.setCursor(QCursor(Qt.PointingHandCursor))
         self.btnPesquisar.setStyleSheet(u"QPushButton{\n"
@@ -199,7 +199,7 @@ class Ui_JanelaPrincipal(object):
         font3.setFamily(u"Nirmala UI")
         font3.setPointSize(13)
         font3.setBold(False)
-        font3.setWeight(50)
+        font3.setWeight(QFont.Normal)
         self.CampoPesquisa.setFont(font3)
         self.CampoPesquisa.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);\n"
@@ -239,7 +239,7 @@ class Ui_JanelaPrincipal(object):
         font4.setFamily(u"Nirmala UI")
         font4.setPointSize(10)
         font4.setBold(True)
-        font4.setWeight(75)
+        font4.setWeight(QFont.Bold)
         font4.setKerning(True)
         __qtablewidgetitem = QTableWidgetItem()
         __qtablewidgetitem.setTextAlignment(Qt.AlignCenter);
@@ -249,7 +249,7 @@ class Ui_JanelaPrincipal(object):
         font5.setFamily(u"Nirmala UI")
         font5.setPointSize(10)
         font5.setBold(True)
-        font5.setWeight(75)
+        font5.setWeight(QFont.Bold)
         __qtablewidgetitem1 = QTableWidgetItem()
         __qtablewidgetitem1.setTextAlignment(Qt.AlignCenter);
         __qtablewidgetitem1.setFont(font5);
@@ -320,7 +320,7 @@ class Ui_JanelaPrincipal(object):
         font6.setPointSize(8)
         font6.setBold(False)
         font6.setItalic(False)
-        font6.setWeight(50)
+        font6.setWeight(QFont.Normal)
         self.ConteudoSobre.setFont(font6)
         self.ConteudoSobre.viewport().setProperty("cursor", QCursor(Qt.UpArrowCursor))
         self.ConteudoSobre.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));\n"
@@ -391,7 +391,7 @@ class Ui_JanelaPrincipal(object):
         font8.setFamily(u"Agency FB")
         font8.setPointSize(20)
         font8.setBold(True)
-        font8.setWeight(75)
+        font8.setWeight(QFont.Bold)
         self.label_18.setFont(font8)
         self.label_18.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));")
@@ -507,7 +507,7 @@ class Ui_JanelaPrincipal(object):
         font9.setFamily(u"Agency FB")
         font9.setPointSize(18)
         font9.setBold(True)
-        font9.setWeight(75)
+        font9.setWeight(QFont.Bold)
         self.label_17.setFont(font9)
         self.label_17.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "background-color: qlineargradient(spread:pad, x1:0.574, y1:1, x2:0.557, y2:0, stop:0 rgba(26, 0, 189, 0), stop:1 rgba(53, 0, 151, 0));")
